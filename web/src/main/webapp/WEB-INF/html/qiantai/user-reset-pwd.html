@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>用户修改密码</title>
+		<link rel="stylesheet" type="text/css" href="css/user-reset-pwd.css"/>
+	</head>
+	<body>
+	<form action="" method="">
+	<table border="" cellspacing="" cellpadding="" onsubmit="return(check_oldpwd()+check_newpwd()+check_renewpwd())==3">
+		<h3>修改密码</h3>
+		<tr>
+			<td>请输入旧密码</td>
+			<td><input type="password" name="oldpwd" id="oldpwd" value="" onblur="check_oldpwd()" /></td>
+		</tr>
+		<tr>
+			<td>请输入新密码</td>
+			<td><input type="password" name="newpwd" id="newpwd" value="" onblur="check_newpwd()" /></td>
+		</tr>
+		<tr>
+			<td>请再次输入新密码</td>
+			<td><input type="password" name="renewpwd" id="renewpwd" value="" onblur="check_renewpwd()" /></td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<input type="submit" value="修改" class="buttons" />
+			</td>
+		</tr>
+	</table>
+	<div id="pwdreset_finish">密码修改成功！</div>	
+</form>
+	</body>
+</html>

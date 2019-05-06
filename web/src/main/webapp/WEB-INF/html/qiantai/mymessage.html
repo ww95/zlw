@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>我的留言</title>
+		<link rel="stylesheet" type="text/css" href="css/mymessage.css"/>
+	</head>
+	<body>
+		<div id="right">
+				<table border="2" cellspacing="" cellpadding="">
+					<thead>
+						<tr>
+							<th>选中</th>
+							<th>留言内容</th>
+							<th>日期</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody id="listTable">
+						<tr>
+							<td><input type="checkbox" onclick="checkAll(this)" class="checks"></td>
+							<td><textarea class="msg_content">欢迎光临</textarea></td>
+							<td></td>
+							<td><button id="delete" onclick="del(this)">删除</button></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" onclick="checkAll(this)" class="checks"/></td>
+							<td><textarea class="msg_content">欢迎光临</textarea></td>
+							<td></td>
+							<td><button id="delete" onclick="del(this)">删除</button></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" onclick="checkAll(this)" class="checks"/></td>
+							<td><textarea class="msg_content">欢迎光临</textarea></td>
+							<td></td>
+							<td><button id="delete" onclick="del(this)">删除</button></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" onclick="checkAllbox()" class="checks"/>全选</td>							
+							<td colspan="3"><button id="delAll" onclick="deleteAll()">全部删除</button></td>
+						</tr>
+					</tbody>
+				</table>		
+		</div>
+	
+	<script type="text/javascript" src="js/mymessage.js" ></script>
+	</body>
+</html>

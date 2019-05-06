@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zlw.dao.OrderDao">
+   <resultMap id="order" type="com.zlw.bean.Order">
+       <id column="o_id" property="id" javaType="Integer"></id>
+       <result column="order_number" property="orderNumber" javaType="String"></result>
+       <result column="user_id" property="userId" javaType="Integer"></result>
+       <result column="travel_id" property="travelId" javaType="Integer"></result>
+       <result column="total_adult" property="totalAdultNumber" javaType="Integer"></result>
+       <result column="total_children" property="totalChildrenNumber" javaType="Integer"></result>
+       <result column="total_prices" property="totalPrices" javaType="Double"></result>
+       <result column="is_play" property="isPlay" javaType="Integer"></result>
+       <result column="comments" property="comments" javaType="String"></result>
+       <association property="user" column="user_id" select="com.zlw.dao.UserDao.selectById"></association>
+       <association property="travel" column="travel_id" select="com.zlw.dao.TravelDao.selectById"></association>
+   </resultMap>
+
+    <select id="selectAll" resultMap="order">
+        select * from order_table
+    </select>
+
+    <select id="selectOne" parameterType="Integer" resultMap="order">
+        select * from order_table where o_id=#{id}
+    </select>
+
+    <insert id="insertList" parameterType="java.util.List">
+        insert into order_table(order_number, user_id, travel_id, total_adult, total_children, total_prices, is_play, comments) VALUES
+        <foreach collection="list" item="order" separator=",">
+            (#{order.orderNumber},#{order.userId},#{order.travelId},#{order.totalAdultNumber},#{order.totalChildrenNumber},#{order.totalPrices},#{order.isPlay},#{order.comments})
+        </foreach>
+    </insert>
+
+    <insert id="insertOne" parameterType="com.zlw.bean.Order">
+        insert into order_table(order_number, user_id, travel_id, total_adult, total_children, total_prices, is_play, comments) VALUES
+            (#{orderNumber},#{userId},#{travelId},#{totalAdultNumber},#{totalChildrenNumber},#{totalPrices},#{isPlay},#{comments})
+
+    </insert>
+
+    <update id="update" parameterType="com.zlw.bean.Order">
+        update order_table
+        <set>
+            <if test="orderNumber!=null">order_number=#{orderNumber},</if>
+            <if test="userId!=null">user_id=#{userId},</if>
+            <if test="travelId!=null">travel_id=#{travelId},</if>
+            <if test="totalAdultNumber!=null">total_adult=#{totalAdultNumber},</if>
+            <if test="totalChildrenNumber!=null">total_children=#{totalChildrenNumber},</if>
+            <if test="totalPrices!=null">total_prices=#{totalPrices},</if>
+            <if test="isPlay!=null">is_play=#{isPlay},</if>
+            <if test="comments!=null">comments=#{comments},</if>
+        </set>
+        where o_id = #{id}
+    </update>
+
+    <delete id="deleteById" parameterType="Integer">
+        delete from order_table where o_id=#{id}
+    </delete>
+</mapper>

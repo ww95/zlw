@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>用户后台</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/user-backstage.css"/>
+	<body>
+	<div id="header">
+		<div id="top-left">
+			让生活更精彩	
+		</div>
+		<div id="top-right">
+			<div class="backstage">
+				<a href="index.jsp">返回首页</a>
+			</div>
+
+			<div class="backstage">
+				<a href="myorder.html">我的订单</a>
+			</div>
+			
+			<div class="backstage">
+				<a href="mycollection.html">我的收藏</a>
+			</div>
+			
+			<div class="backstage">
+				<a href="#">我的消息</a>
+			</div>
+			
+			<div class="backstage">
+				<a href="register.jsp">免费注册</a>
+			</div>
+			
+			<div class="backstage">
+				<a href="loading.jsp" style="color: blue;">您好，请登录</a>
+			</div>
+						
+		</div>
+		</div>
+		<div id="left">
+			<div class="btn" onclick="showbottom(1)">个人中心</div>
+			<div id="show1" class="show">
+				<div><a onclick="goto('personal.html')" href="javascript:;">个人资料</a></div>
+				<div><a onclick="goto('user-reset-pwd.html')" href="javascript:;">密码设置</a></div>
+			</div>
+			<div class="btn" onclick="showbottom(2)">常用信息</div>
+			<div id="show2" class="show">
+				<div><a onclick="goto('tourist-information.html')" href="javascript:;">游客信息</a></div>
+			</div>
+			<div class="btn" onclick="showbottom(3)">我的收藏</div>
+			<div id="show3" class="show">
+				<div><a onclick="goto('mycollection.html')" href="javascript:;">我的收藏</a></div>
+			</div>
+			<div class="btn" onclick="showbottom(4)">我的订单</div>
+			<div id="show4" class="show">
+				<div><a onclick="goto('myorder.html')" href="javascript:;">已处理订单</a></div>
+				<div><a onclick="goto('myorder2.html')" href="javascript:;">未处理订单</a></div>
+			</div>
+			<div class="btn"  onclick="showbottom(5)">我的消息</div>
+			<div id="show5" class="show">
+				<div><a onclick="goto('mynews.html')" href="javascript:;">我的消息</a></div>
+			</div>
+			<div class="btn"  onclick="showbottom(6)">我的留言</div>
+			<div id="show6" class="show">
+				<div><a onclick="goto('mymessage.html')" href="javascript:;">我的留言</a></div>
+			</div>
+		</div>
+		<div id="right">
+		<div id="ul-nav"></div>
+		<div id="iframe_box"></div>
+		</div>
+	</body>
+	<script src="js/user-backstage.js" type="text/javascript" charset="utf-8"></script>
+</html>
