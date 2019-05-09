@@ -28,6 +28,11 @@ public class CollectionServiceImpl implements CollectionService {
     }
 
     @Override
+    public List<Collections> getAllByUser(Integer id) {
+        return collectionDao.selectAllByUser(id);
+    }
+
+    @Override
     public Collections getById(Integer id) {
         return collectionDao.selectOne(id);
     }

@@ -10,6 +10,7 @@ public interface CollectionDao {
     void insertList(List<Collections> list);
     void insertOne(Collections collection);
     List<Collections> selectAll();
+    List<Collections> selectAllByUser(Integer id);
     Collections selectOne(Integer id);
     void update(Collections collection);
     void deleteById(Integer id);

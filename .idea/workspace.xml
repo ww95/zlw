@@ -7,91 +7,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e55666cd-205d-45ee-96ae-00042f791d93" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/zlw/bean/Page.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/zlw/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/zlw/global/UserFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/zlw/util/Utils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/bottom.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/collection_list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/info-update.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/order_list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/password-update.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/self-index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/top.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/travel_detail.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/css/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/css/simplelightbox.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/images/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/images/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/images/Thumbs.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/images/bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/images/bg2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/images/g1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/images/g2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/images/g3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/images/g4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/images/g5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/images/g6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/images/g7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/images/g8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/images/left1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/images/move-up.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/images/right2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/images/slider1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/images/slider2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/images/slider3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/images/slider4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/images/t1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/images/t2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/images/t3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/images/t5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/images/te1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/images/te2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/js/easing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/js/jquery-2.2.3.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/js/jquery.flexisel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/js/move-top.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/js/numscroller-1.0.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/js/responsiveslides.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/js/simple-lightbox.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/zlw/controller/DefaultController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/zlw/controller/DefaultController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/resources/spring-web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/spring-web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/forgetpwd.html" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/collection_deatil.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/zlw/dao/CollectionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/zlw/dao/CollectionDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/resources/com/zlw/dao/CollectionDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/resources/com/zlw/dao/CollectionDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/zlw/dao/CollectionDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/com/zlw/dao/CollectionDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/zlw/dao/CollectionDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/com/zlw/dao/CollectionDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/zlw/service/CollectionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/zlw/service/CollectionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/zlw/service/impl/CollectionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/zlw/service/impl/CollectionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/com/zlw/service/CollectionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/com/zlw/service/CollectionService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/com/zlw/service/impl/CollectionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/com/zlw/service/impl/CollectionServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/zlw/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/zlw/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/collection_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/collection_list.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/loading.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/msgboard.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/mycollection.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/mymessage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/mynews.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/myorder.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/myorder2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/personal.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/register.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/searchresult.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/shopdetail.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/shopping.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/tourist-information.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/user-backstage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/user-reset-pwd.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/assets/js/dataTables/jquery.dataTables.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/assets/js/dataTables/jquery.dataTables.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/wopop/google_jquery-ui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/wopop/google_jquery-ui.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/wopop/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/wopop/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/order_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/order_list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/password-update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/password-update.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/travel_detail.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/com/zlw/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/com/zlw/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web.war" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/zlw/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/zlw/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/html/qiantai/collection_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/html/qiantai/collection_list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/html/qiantai/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/html/qiantai/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/html/qiantai/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/html/qiantai/order_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/html/qiantai/order_list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/html/qiantai/password-update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/html/qiantai/password-update.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/html/qiantai/travel_detail.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/dao-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/dao-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/service-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -123,80 +66,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/travel_detail.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-264">
-              <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/order_list.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="704">
-              <caret line="32" column="32" lean-forward="true" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/collection_list.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="40" column="25" lean-forward="true" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
-              <folding>
-                <element signature="n#table#0;n#div#0;n#div#0;n#!!top" />
-                <element signature="n#thead#0;n#table#0;n#div#0;n#div#0;n#!!top" />
-                <element signature="n#tbody#0;n#table#0;n#div#0;n#div#0;n#!!top" />
-                <element signature="n#c:forEach#0;n#c:if#0;n#c:if#0;n#jsp:root#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/top.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="271" column="85" lean-forward="true" selection-start-line="271" selection-start-column="72" selection-end-line="271" selection-end-column="85" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/src/main/java/com/zlw/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-51">
-              <caret line="120" column="16" selection-start-line="120" selection-start-column="16" selection-end-line="120" selection-end-column="16" />
+            <state relative-caret-position="142">
+              <caret line="135" column="52" selection-start-line="135" selection-start-column="52" selection-end-line="135" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3019#3020#0" expanded="true" />
-                <element signature="e#3063#3064#0" expanded="true" />
-                <element signature="e#3451#3452#0" expanded="true" />
-                <element signature="e#3499#3500#0" expanded="true" />
-                <element signature="e#3695#3696#0" expanded="true" />
-                <element signature="e#3743#3744#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/password-update.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="3" column="87" selection-start-line="3" selection-start-column="67" selection-end-line="3" selection-end-column="87" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/info-update.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="18" column="53" lean-forward="true" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -204,8 +81,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/src/main/java/com/zlw/controller/back/AdminController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-330">
-              <caret line="226" column="5" lean-forward="true" selection-start-line="226" selection-start-column="5" selection-end-line="226" selection-end-column="5" />
+            <state relative-caret-position="154">
+              <caret line="232" column="52" lean-forward="true" selection-start-line="232" selection-start-column="7" selection-end-line="232" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -226,10 +103,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>catalog-add</find>
-      <find>add</find>
-      <find>content</find>
-      <find>`</find>
       <find>id</find>
       <find>travel-list</find>
       <find>to-travel-edit</find>
@@ -254,8 +127,12 @@
       <find>pagination</find>
       <find>index</find>
       <find>play-order</find>
-      <find>order-list</find>
       <find>travel-de</find>
+      <find>order-list</find>
+      <find>collection-list</find>
+      <find>collectionList</find>
+      <find>to-uodate-pwd</find>
+      <find>collection-detail</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -265,11 +142,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/src/main/java/com/zlw/controller/back/DefaultController.java" />
-        <option value="$PROJECT_DIR$/web/src/main/webapp/iframe/welcome.html" />
-        <option value="$PROJECT_DIR$/web/src/main/webapp/iframe/welcome.jsp" />
-        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/houtai/index.html" />
-        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/houtai/bottom.jsp" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/houtai/Wopop.html" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/houtai/login.jsp" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/houtai/index.jsp" />
@@ -298,7 +170,6 @@
         <option value="$PROJECT_DIR$/web/src/main/java/com/zlw/controller/AdminController.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/zlw/global/UserFilter.java" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/sop.jsp" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/e7aa027f-7b5a-4850-89c7-11967e64c607/console.sql" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/buttom.jsp" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/zlw/util/IndexUtil.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/zlw/util/Utils.java" />
@@ -308,13 +179,19 @@
         <option value="$PROJECT_DIR$/web/src/main/resources/spring-web.xml" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/travel-detail.jsp" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/self-index.jsp" />
-        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/top.jsp" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/travel_detail.jsp" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/info-update.jsp" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/order_list.jsp" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/index.jsp" />
-        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/travel_detail.jsp" />
-        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/collection_list.jsp" />
-        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/info-update.jsp" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/password-update.jsp" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/top.jsp" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/zlw/dao/CollectionDao.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/zlw/service/CollectionService.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/zlw/service/impl/CollectionServiceImpl.java" />
+        <option value="$PROJECT_DIR$/dao/src/main/resources/com/zlw/dao/CollectionDao.xml" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/e7aa027f-7b5a-4850-89c7-11967e64c607/console.sql" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/collection_list.jsp" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/collection_deatil.jsp" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/zlw/controller/UserController.java" />
       </list>
     </option>
@@ -396,7 +273,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
-      <hideEmptyPackages ProjectPane="false" />
+      <hideEmptyPackages ProjectPane="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -411,6 +288,120 @@
             <path>
               <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
               <item name="zlw" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zlw" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zlw" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zlw" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zlw" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zlw" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zlw" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zlw" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zlw" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zlw" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zlw" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zlw" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zlw" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zlw" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zlw" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zlw" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zlw" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zlw" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -441,16 +432,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zlw" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="zlw" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -460,7 +441,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="zlw" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -471,7 +451,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="zlw" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
               <item name="back" type="462c0819:PsiDirectoryNode" />
@@ -681,8 +660,16 @@
       <workItem from="1557219493861" duration="8676000" />
       <workItem from="1557240623279" duration="332000" />
       <workItem from="1557273364739" duration="9202000" />
-      <workItem from="1557362474237" duration="3768000" />
+      <workItem from="1557362474237" duration="10133000" />
     </task>
+    <task id="LOCAL-00001" summary="毕业论文">
+      <created>1557368908296</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1557368908296</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -718,13 +705,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86028000" />
+    <option name="totallyTimeSpent" value="92393000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22995462" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22995462" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -734,7 +721,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32786885" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.43114755" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.43114755" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -799,67 +786,15 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="毕业论文" />
+    <option name="LAST_COMMIT_MESSAGE" value="毕业论文" />
+  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/zlw/bean/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="26" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/houtai/order_list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/houtai/top.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6094">
-          <caret line="277" column="21" selection-start-line="277" selection-start-column="21" selection-end-line="277" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/zlw/util/UserUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="33" column="45" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/test/java/com/test/web/UserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="39" column="67" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="67" />
-          <folding>
-            <element signature="e#1044#1045#0" expanded="true" />
-            <element signature="e#1120#1121#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/houtai/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/zlw/controller/back/BackstageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/houtai/catalog_edit.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
@@ -904,13 +839,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dao/src/main/resources/com/zlw/dao/CatalogDao.xml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/resources/com/zlw/dao/CollectionDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="55" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="55" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dao/src/main/resources/com/zlw/dao/OrderDao.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -965,13 +893,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="11" column="72" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e7aa027f-7b5a-4850-89c7-11967e64c607/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="53" column="13" lean-forward="true" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1153,88 +1074,148 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/travel_list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-462" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="69" column="90" selection-start-line="69" selection-start-column="90" selection-end-line="69" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/zlw/controller/back/AdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-330">
-          <caret line="226" column="5" lean-forward="true" selection-start-line="226" selection-start-column="5" selection-end-line="226" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/travel_detail.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-264">
-          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/order_list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="32" column="32" lean-forward="true" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/collection_list.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="40" column="25" lean-forward="true" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
-          <folding>
-            <element signature="n#table#0;n#div#0;n#div#0;n#!!top" />
-            <element signature="n#thead#0;n#table#0;n#div#0;n#div#0;n#!!top" />
-            <element signature="n#tbody#0;n#table#0;n#div#0;n#div#0;n#!!top" />
-            <element signature="n#c:forEach#0;n#c:if#0;n#c:if#0;n#jsp:root#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="110">
+          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/info-update.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="18" column="53" lean-forward="true" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
+        <state relative-caret-position="132">
+          <caret line="6" column="116" selection-start-line="6" selection-start-column="92" selection-end-line="6" selection-end-column="116" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/top.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="271" column="85" lean-forward="true" selection-start-line="271" selection-start-column="72" selection-end-line="271" selection-end-column="85" />
+        <state relative-caret-position="169">
+          <caret line="258" column="53" lean-forward="true" selection-start-line="258" selection-start-column="53" selection-end-line="258" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1408">
+          <caret line="64" column="33" lean-forward="true" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/order_list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/houtai/travel_list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="43" column="26" lean-forward="true" selection-start-line="33" selection-start-column="20" selection-end-line="43" selection-end-column="26" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/zlw/bean/Collections.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/password-update.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="87" selection-start-line="3" selection-start-column="67" selection-end-line="3" selection-end-column="87" />
+        <state relative-caret-position="198">
+          <caret line="9" column="57" lean-forward="true" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/zlw/dao/CollectionDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/zlw/service/impl/CollectionServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="31" column="47" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
+          <folding>
+            <element signature="e#818#819#0" expanded="true" />
+            <element signature="e#845#846#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/zlw/service/CollectionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/resources/com/zlw/dao/CollectionDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="17" column="52" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e7aa027f-7b5a-4850-89c7-11967e64c607/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="58" column="13" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/collection_list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="25" column="96" selection-start-line="25" selection-start-column="79" selection-end-line="25" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/collection_detail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/houtai/travel_detail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="25" lean-forward="true" selection-end-line="60" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/collection_deatil.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="60" column="9" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/zlw/controller/back/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="232" column="52" lean-forward="true" selection-start-line="232" selection-start-column="7" selection-end-line="232" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/java/com/zlw/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="120" column="16" selection-start-line="120" selection-start-column="16" selection-end-line="120" selection-end-column="16" />
+        <state relative-caret-position="142">
+          <caret line="135" column="52" selection-start-line="135" selection-start-column="52" selection-end-line="135" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3019#3020#0" expanded="true" />
-            <element signature="e#3063#3064#0" expanded="true" />
-            <element signature="e#3451#3452#0" expanded="true" />
-            <element signature="e#3499#3500#0" expanded="true" />
-            <element signature="e#3695#3696#0" expanded="true" />
-            <element signature="e#3743#3744#0" expanded="true" />
           </folding>
         </state>
       </provider>

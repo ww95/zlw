@@ -8,6 +8,7 @@ public interface CollectionService {
     void addList(List<Collections> list);
     void addOne(Collections collection);
     List<Collections> getAll();
+    List<Collections> getAllByUser(Integer id);
     Collections getById(Integer id);
     void edit(Collections collection);
     void removeById(Integer id);

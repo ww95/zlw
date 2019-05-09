@@ -3,6 +3,7 @@ package com.zlw.controller;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.zlw.bean.Order;
+import com.zlw.bean.Travel;
 import com.zlw.bean.User;
 import com.zlw.service.*;
 import com.zlw.util.Utils;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpSession;
 import java.util.Map;
 
 @Controller
@@ -57,7 +59,7 @@ public class UserController {
         //获取所有的订单数据
         PageHelper.startPage(Utils.pageUtil(pageNum),5);
         PageInfo pageInfo = PageInfo.of(orderService.getAll());
-        map.put("orders",pageInfo);
+        map.put("pageInfo",pageInfo);
         return "qiantai/order_list";
     }
     //支付成功
@@ -72,29 +74,18 @@ public class UserController {
     /**
      * 收藏中心
      * @param map
-     * @param pageNum
      * @return
      */
     @RequestMapping("collection-list")
-    public String collectionList(Map<String,Object> map,@RequestParam(required = false) Integer pageNum){
-        PageHelper.startPage(Utils.pageUtil(pageNum),10);
-        map.put("pageInfo",PageInfo.of(catalogService.getAll()));
+    public String collection(Map<String,Object> map, @RequestParam(required = false) Integer pageNum, HttpSession session){
+        PageHelper.startPage(Utils.pageUtil(pageNum),5);
+        User user = (User) session.getAttribute("user");
+        System.out.println(user.getU_id());
+        PageInfo pageInfo = PageInfo.of(collectionService.getAllByUser(user.getU_id()));
+        map.put("pageInfo",pageInfo);
         return "qiantai/collection_list";
     }
 
-    /**
-     * 商品详情
-     * @param map
-     * @param id
-     * @return
-     */
-    @RequestMapping("travel-detail")
-    private String travelDetail(Map<String,Object> map,@RequestParam(required = false) Integer id){
-        map.put("travel",travelService.getById(id));
-        System.out.println(travelService.getById(id));
-        map.put("catalogs",catalogService.getAll());
-        return "qiantai/travel_detail";
-    }
 
     /**
      * 跳转到修改信息页面
@@ -119,12 +110,10 @@ public class UserController {
 
     /**
      * 跳转到修改密码页面
-     * @param map
-     * @param user
      * @return
      */
     @RequestMapping("to-uodate-pwd")
-    private String toUodatePwd(Map<String,Object> map, User user){
+    private String toUodatePwd(){
         return "qiantai/password-update";
     }
 
@@ -137,5 +126,14 @@ public class UserController {
     @ResponseBody
     private void selfPasswordUpdate(Map<String,Object> map, User user){
         userService.editByUserName(user);
+    }
+
+    @RequestMapping("collection-detail")
+    public String collectionDetail(Map<String,Object> map,@RequestParam(required = false) Integer id){
+        Travel travel = travelService.getById(id);
+        System.out.println(travel.toString());
+        map.put("travel",travel);
+        map.put("catalogs",catalogService.getAll());
+        return "qiantai/collection_deatil";
     }
 }

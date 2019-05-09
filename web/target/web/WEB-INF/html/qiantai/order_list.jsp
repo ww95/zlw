@@ -35,11 +35,11 @@
                     <div>
                         <nav aria-label="Page navigation example">
                             <ul class="pagination">
-                                <li class="page-item"><a class="page-link" href="<%=request.getContextPath()%>/backstage/admin/order-list?pageNum=${pageInfo.pageNum -1}">Previous</a></li>
+                                <li class="page-item"><a class="page-link" href="<%=request.getContextPath()%>/user/order-list?pageNum=${pageInfo.pageNum -1}">Previous</a></li>
                                 <c:forEach begin="1" end="${pageInfo.pages}" varStatus="index" step="1">
-                                    <li class="page-item"><a class="page-link" href="<%=request.getContextPath()%>/backstage/admin/order-list?pageNum=${index.index}">${index.index}</a></li>
+                                    <li class="page-item"><a class="page-link" href="<%=request.getContextPath()%>/user/order-list?pageNum=${index.index}">${index.index}</a></li>
                                 </c:forEach>
-                                <li class="page-item"><a class="page-link" href="<%=request.getContextPath()%>/backstage/admin/order-list?pageNum=${pageInfo.pageNum +1}">Next</a></li>
+                                <li class="page-item"><a class="page-link" href="<%=request.getContextPath()%>/user/order-list?pageNum=${pageInfo.pageNum +1}">Next</a></li>
                             </ul>
                         </nav>
                     </div>

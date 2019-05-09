@@ -61,16 +61,16 @@
 										<li><a href="#testi" class="scroll">注册</a></li>
 									</ul>
 								</li>
-								<li><a href="#contact" class="scroll">收藏中心</a></li>
+								<li><a href="#team" class="scroll">收藏中心</a></li>
 							</ul>
 						</c:if>
 						<c:if test="${user != null}">
 							<ul class="nav navbar">
 								<li><a href="<%=request.getContextPath()%>/index" class="active">首页</a></li>
-								<li><a href="<%=request.getContextPath()%>/user/order-list" class="scroll">个人中心</a></li>
+								<li><a href="<%=request.getContextPath()%>/user/order-list" class="active">个人中心</a></li>
 								<li><a href="#gallery" class="scroll">旅游列表</a></li>
 								<li><a href="#" class="scroll">${user.username}</a></li>
-								<li><a href="<%=request.getContextPath()%>/user/collection-list" class="scroll">收藏中心</a></li>
+								<li><a href="<%=request.getContextPath()%>/user/collection-list" class="active">收藏中心</a></li>
 							</ul>
 						</c:if>
 					</div>

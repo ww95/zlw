@@ -14,6 +14,9 @@
     <select id="selectAll" resultMap="collection">
         select * from collection
     </select>
+    <select id="selectAllByUser" parameterType="java.lang.Integer" resultMap="collection">
+        select * from collection where user_id=#{id}
+    </select>
 
     <select id="selectOne" parameterType="Integer" resultMap="collection">
         select * from collection where c_id=#{id}

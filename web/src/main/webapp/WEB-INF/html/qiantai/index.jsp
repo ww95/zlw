@@ -61,7 +61,7 @@
 										<li><a href="#testi" class="scroll">注册</a></li>
 									</ul>
 								</li>
-								<li><a href="#contact" class="scroll">收藏中心</a></li>
+								<li><a href="#team" class="scroll">收藏中心</a></li>
 							</ul>
 						</c:if>
 						<c:if test="${user != null}">
