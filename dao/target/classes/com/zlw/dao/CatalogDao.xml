@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zlw.dao.CatalogDao">
+    <resultMap id="catalog" type="Catalog">
+        <id property="id" column="id_one" javaType="Integer"></id>
+        <result property="title" column="title_one" javaType="String"></result>
+    </resultMap>
+<!--插入多个分类信息-->
+    <insert id="insertList" parameterType="java.util.List">
+        insert into first_class(title_one) values
+        <foreach collection="list" item="catalog" separator=",">
+            (#{catalog.title})
+        </foreach>
+    </insert>
+<!--    插入一条数据-->
+    <insert id="insertOne" parameterType="com.zlw.bean.Catalog">
+        insert into first_class(title_one) values (#{title})
+    </insert>
+<!--    查询所有信息-->
+    <select id="selectAll" resultMap="catalog">
+        select * from first_class
+    </select>
+<!--    根据id查询信息-->
+    <select id="selectOne" parameterType="Integer" resultMap="catalog">
+        select * from first_class where id_one=#{id}
+    </select>
+<!--    更新分类信息-->
+    <update id="upadte" parameterType="Catalog">
+        update first_class
+        <set>
+            <if test="title != null">title_one=#{title}</if>
+        </set>
+        where id_one=#{id}
+    </update>
+<!--    根据id删除分类信息-->
+    <delete id="deleteById" parameterType="Integer">
+        delete from first_class where id_one=#{id}
+    </delete>
+</mapper>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zlw.dao.TravelDao">
+   <resultMap id="travel" type="Travel">
+       <id column="t_id" property="id" javaType="Integer"></id>
+       <result column="t_title" property="title" javaType="String"></result>
+       <result column="t_catalog" property="catalogId" javaType="Integer"></result>
+       <result column="t_destination" property="destination" javaType="String"></result>
+       <result column="t_price" property="price" javaType="Double"></result>
+       <result column="t_discount" property="discount" javaType="Double"></result>
+       <result column="t_cost" property="cost" javaType="Double"></result>
+       <result column="t_info" property="info" javaType="String"></result>
+       <result column="t_img_path" property="imgPath" javaType="String"></result>
+       <result column="t_content" property="content" javaType="String"></result>
+       <association property="catalog" column="t_catalog" select="com.zlw.dao.CatalogDao.selectOne"></association>
+   </resultMap>
+    <insert id="insertList" parameterType="java.util.List">
+        insert into travel (t_title, t_catalog, t_destination, t_price, t_discount, t_cost, t_info, t_img_path, t_content) VALUES
+         <foreach collection="list" item="travel" separator=",">
+             (#{travel.title},#{travel.catalogId},#{travel.destination},#{travel.price},#{travel.discount},#{travel.cost},#{travel.info},#{travel.imgPath},#{travel.content})
+         </foreach>
+    </insert>
+
+    <insert id="insertOne" parameterType="Travel">
+        insert into travel (t_title, t_catalog, t_destination, t_price, t_discount, t_cost, t_info, t_img_path, t_content) VALUES
+        (#{title},#{catalogId},#{destination},#{price},#{discount},#{cost},#{info},#{imgPath},#{content})
+    </insert>
+    <select id="selectById" parameterType="Integer" resultMap="travel">
+        select * from travel where t_id=#{id}
+    </select>
+    <select id="selectAll" resultMap="travel">
+        select * from travel
+    </select>
+    <delete id="deleteById" parameterType="Integer">
+        delete from travel where t_id=#{id}
+    </delete>
+    <update id="update" parameterType="Travel">
+        update travel
+        <set>
+            <if test="title != null">t_title=#{title},</if>
+            <if test="catalogId != null">t_catalog=#{catalogId},</if>
+            <if test="destination != null">t_destination=#{destination},</if>
+            <if test="price != null">t_price=#{price},</if>
+            <if test="discount != null">t_discount=#{discount},</if>
+            <if test="cost != null">t_cost=#{cost},</if>
+            <if test="info != null">t_info=#{info},</if>
+            <if test="imgPath != null">t_img_path=#{imgPath},</if>
+            <if test="content != null">t_content=#{content},</if>
+        </set>
+        where t_id=#{id}
+    </update>
+</mapper>

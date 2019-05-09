@@ -1,315 +1,574 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<title>娄底市阳光旅游电商平台</title>
-		<link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/css/index.css"/>
-		<script type="text/javascript" src="<%=request.getContextPath()%>/js/pic.js"></script>
-	</head>
-	<body>
-	<!--首部栏-->
-	<div id="header">
-		<div id="top-left">
-			让生活更精彩	
-		</div>
-		<div id="top-right">
-			<div class="backstage">
-				<a href="msgboard.html">留言板</a>
-			</div>
+<html lang="en">
 
-			<div class="backstage">
-				<a href="myorder.html">我的订单</a>
-			</div>
-			<div class="backstage">
-				<a href="mycollection.html">我的收藏</a>
-			</div>
-			
-			<div class="backstage">
-				<a href="mynews.html">我的消息</a>
-			</div>
-			<c:if test="${user==null}">
-				<div class="backstage">
-					<a href="register.jsp">免费注册</a>
-				</div>
+<head>
+	<title>Home</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="" />
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
 
-				<div class="backstage">
-					<a href="loading.jsp" style="color: blue;">您好，请登录</a>
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!-- Custom Theme files -->
+	<link href="<%=request.getContextPath()%>/css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+	<link href="<%=request.getContextPath()%>/css/style.css" type="text/css" rel="stylesheet" media="all">
+	<link href="<%=request.getContextPath()%>/css/font-awesome.css" rel="stylesheet">
+	<!-- font-awesome icons -->
+	<!-- //Custom Theme files -->
+	<!-- web-fonts -->
+	<link href="http://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i&amp;subset=latin-ext"
+		  rel="stylesheet">
+	<link href="http://fonts.googleapis.com/css?family=Gudea:400,400i,700&amp;subset=latin-ext" rel="stylesheet">
+	<link href="http://fonts.googleapis.com/css?family=Marck+Script&amp;subset=cyrillic,latin-ext" rel="stylesheet">
+	<!-- //web-fonts -->
+</head>
+
+<body>
+<!-- banner -->
+<div class="agileits-banner">
+	<div class="bnr-agileinfo">
+		<!-- navigation -->
+		<div class="top-nav w3-agiletop">
+			<div class="container">
+				<div class="navbar-header w3llogo">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<h1><a href="index.html">Travel<span>rendy</span></a></h1>
 				</div>
-			</c:if>
-			<c:if test="${user!=null}">
-				<div class="backstage">
-					<a href="loading.jsp" style="color: blue;">个人中心</a>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<div class="w3menu navbar-right">
+						<c:if test="${user == null}">
+							<ul class="nav navbar">
+								<li><a href="<%=request.getContextPath()%>/index" class="active">首页</a></li>
+								<li><a href="#team" class="scroll">个人中心</a></li>
+								<li><a href="#gallery" class="scroll">旅游列表</a></li>
+								<li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span data-letters="Pages">登录|注册</span><span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a href="#team" class="scroll">登录</a></li>
+										<li><a href="#testi" class="scroll">注册</a></li>
+									</ul>
+								</li>
+								<li><a href="#contact" class="scroll">收藏中心</a></li>
+							</ul>
+						</c:if>
+						<c:if test="${user != null}">
+							<ul class="nav navbar">
+								<li><a href="<%=request.getContextPath()%>/index" class="active">首页</a></li>
+								<li><a href="<%=request.getContextPath()%>/user/order-list" class="active">个人中心</a></li>
+								<li><a href="#gallery" class="scroll">旅游列表</a></li>
+								<li><a href="#" class="scroll">${user.username}</a></li>
+								<li><a href="<%=request.getContextPath()%>/user/collection-list" class="active">收藏中心</a></li>
+							</ul>
+						</c:if>
+					</div>
+					<div class="clearfix"> </div>
 				</div>
-				<div class="backstage">
-						${user.username}
-					<c:if test="${user.sex == 0}">
-						女士
-					</c:if>
-					<c:if test="${user.sex == 1}">
-						先生
-					</c:if>
+			</div>
+		</div>
+		<!-- //navigation -->
+		<!-- banner-text -->
+		<div class="banner-w3text">
+			<div class="container">
+				<div class="w3l-agile">
+					<h2>探索永无<span>止境</span></h2>
+					<div class="banner-pw3l">
+						<p>Start your destiny here . . </p>
+					</div>
+					<div class="w3lsmore">
+						<a href="single.html" class="button-pipaluk button--inverted" data-toggle="modal" data-target="#myModal1">了解更多</a>
+					</div>
 				</div>
-			</c:if>
+			</div>
+		</div>
+		<!-- //banner-text -->
+	</div>
+</div>
+<!-- Modal2 -->
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
+	<div class="modal-dialog">
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4>Trendy Travel</h4>
+				<img src="<%=request.getContextPath()%>/images/g1.jpg" alt=" " class="img-responsive">
+				<h5>To Travel is to take a journey into yourself.</h5>
+				<p>Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+					ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
 		</div>
 	</div>
-	
-	<!--搜索栏-->
-	<div id="search">		
-		<a href="index.jsp"><img src="img/logo.png" style="width: 60px;height: 60px;" alt="logo" id="logo"/></a>
-		<div id="box">
-			<input type="text" name="search" id="s_box" placeholder="请输入景点名、主题或关键词" />
-			<div id="s_button">搜索</div>
+</div>
+<!-- //Modal2 -->
+<!-- //banner -->
+<!-- Stats -->
+<div class="stats services news-w3layouts">
+	<div class="container">
+		<div class="stats-agileinfo agileits-w3layouts">
+			<div class="col-sm-3 col-xs-3 stats-grid">
+				<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='9570' data-delay='.5' data-increment="100">9570</div>
+				<h6>CUSTOMERS</h6>
+			</div>
+			<div class="col-sm-3 col-xs-3 stats-grid">
+				<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='850' data-delay='8' data-increment="1">850</div>
+				<h6>TOURS</h6>
+			</div>
+			<div class="col-sm-3 col-xs-3 stats-grid">
+				<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='5000' data-delay='.5' data-increment="10">5000</div>
+				<h6>DESTINATIONS</h6>
+			</div>
+			<div class="col-sm-3 col-xs-3 stats-grid">
+				<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='110' data-delay='8' data-increment="1">50</div>
+				<h6>TOUR TYPES</h6>
+			</div>
+			<div class="clearfix"></div>
 		</div>
-		
 	</div>
-	
-	<!--导航（商品分类）栏-->
-	<div id="nav">
-		<ul>
-				<li>
-					<a href="#">热门景点</a>
-					<ul>
-						<li>三亚湾</li>
-						<li>张家界</li>
-						<li>武夷山</li>
-						<li>富士山</li>
-					</ul>
-				</li>
-			<li>
-				<a href="#">周边景点</a>
-				<ul>
-					<li>梅山龙宫</li>
-					<li>湄江风景区</li>
-					<li>紫鹊界梯田</li>
-					<li>冷水江波月洞</li>
+</div>
+
+<%--轮播图信息--%>
+<div class="middle-w3l">
+	<div class="container">
+		<div class="about-right-w3-agileits">
+			<div class="callbacks_container">
+				<ul class="rslides" id="slider3">
+					<li>
+						<div class="col-md-6 about-left-w3-agileits">
+							<h6>Welcome to Trendy Travel</h6>
+							<h3>Book your Dream Place</h3>
+							<p class="para-w3-agile">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed sollicitudin ante. Nullam condimentum mollis odio,
+								sed aliquet dolor consectetur.</p>
+							<div class="w3l-book">
+								<h5>Prices Start at</h5>
+								<h6><span>$</span> 786</h6>
+							</div>
+						</div>
+						<div class="col-md-6 banner-text1">
+							<img src="<%=request.getContextPath()%>/images/slider1.jpg" alt=" ">
+						</div>
+						<div class="clearfix"> </div>
+					</li>
+					<li>
+						<div class="col-md-6 about-left-w3-agileits">
+							<h6>Welcome to Trendy Travel</h6>
+							<h3>Book Buguon Beach</h3>
+							<p class="para-w3-agile">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed sollicitudin ante. Nullam condimentum mollis odio,
+								sed aliquet dolor consectetur.</p>
+							<div class="w3l-book">
+								<h5>Prices Start at</h5>
+								<h6><span>$</span> 11024</h6>
+							</div>
+						</div>
+						<div class="col-md-6 banner-text1">
+							<img src="<%=request.getContextPath()%>/images/slider2.jpg" alt=" ">
+						</div>
+						<div class="clearfix"> </div>
+					</li>
+					<li>
+						<div class="col-md-6 about-left-w3-agileits">
+							<h6>Welcome to Trendy Travel</h6>
+							<h3>Fern Hills River</h3>
+							<p class="para-w3-agile">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed sollicitudin ante. Nullam condimentum mollis odio,
+								sed aliquet dolor consectetur.</p>
+							<div class="w3l-book">
+								<h5>Prices Start at</h5>
+								<h6><span>$</span> 6782</h6>
+							</div>
+						</div>
+						<div class="col-md-6 banner-text1">
+							<img src="<%=request.getContextPath()%>/images/slider3.jpg" alt=" ">
+						</div>
+						<div class="clearfix"> </div>
+					</li>
+					<li>
+						<div class="col-md-6 about-left-w3-agileits">
+							<h6>Welcome to Trendy Travel</h6>
+							<h3>Aenean in egestas</h3>
+							<p class="para-w3-agile">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed sollicitudin ante. Nullam condimentum mollis odio,
+								sed aliquet dolor consectetur.</p>
+							<div class="w3l-book">
+								<h5>Prices Start at</h5>
+								<h6><span>$</span> 7548</h6>
+							</div>
+						</div>
+						<div class="col-md-6 banner-text1">
+							<img src="<%=request.getContextPath()%>/images/slider4.jpg" alt=" ">
+						</div>
+						<div class="clearfix"> </div>
+					</li>
 				</ul>
-			</li>
-			<li>
-				<a href="#">一日游</a>
-				<ul>				
-					<li>都江堰</li>
-					<li>八达岭长城</li>
-					<li>西安秦始皇陵</li>
-				</ul>
-			</li>
-			<li>
-				<a href="#">周末游</a>
-				<ul>
-					<li>泰山</li>
-					<li>衡山</li>
-					<li>华山</li>
-					<li>恒山</li>
-				</ul>
-			</li>
-			<li>
-				<a href="#">跟团游</a>
-				<ul>
-					<li>西北青海湖</li>
-					<li>云南香格里拉</li>	
-					<li>新疆吐鲁番</li>	
-				</ul>
-			</li>
-			<li>
-				<a href="#">自由行</a>
-				<ul>
-					<li>长隆</li>
-					<li>丽江</li>
-					<li>长白山</li>	
-					<li>海南三亚湾</li>														
-				</ul>
-			</li>
-			<li>
-				<a href="#">出国游</a>
-				<ul>
-					<li>美国</li>					
-					<li>英国</li>
-					<li>日本</li>
-					<li>澳大利亚</li>
-				</ul>
-			</li>
-			<li style="border: none;">
-				<a href="#">定制旅游</a>
-				<ul>
-					<li>个人定制</li>
-					<li>家庭定制</li>
-					<li>公司定制</li>					
-				</ul>
-			</li>
-		</ul>
+			</div>
+		</div>
+		<div class="clearfix"> </div>
 	</div>
-	
-	<!--内容-->
-	<div id="content">
-		<div class="wrap" id='wrap'>
-			<ul id="pic">
-			<li><img src="<%=request.getContextPath()%>/img/pic1.jpg" alt="pic1" class="pic"></li>
-			<li><img src="<%=request.getContextPath()%>/img/pic2.jpeg" alt="pic2" class="pic"></li>
-			<li><img src="<%=request.getContextPath()%>/img/pic3.jpg" alt="pic3" class="pic"></li>
-			<li><img src="<%=request.getContextPath()%>/img/pic4.jpg" alt="pic4" class="pic"></li>
-			<li><img src="<%=request.getContextPath()%>/img/pic5.jpg" alt="pic5" class="pic"></li>
+</div>
+<!-- //middle -->
+<!-- Gallery -->
+<%--这里就是一些分类信息--%>
+<div id="gallery" class="gallery">
+	<div class="container">
+		<h3 class="title-w3-agile">Portfolio</h3>
+		<div><nav aria-label="Page navigation example">
+			<ul id="pagination" class="pagination">
+				<li class="page-item"><a class="page-link" href="javascript:;" onclick="ajax(1)">首页</a></li>
+				<li class="page-item"><a class="page-link" href="javascript:;" onclick="ajax(${pageInfo.pageNum-1})">上一页</a></li>
+				<c:forEach step="1" end="${pageInfo.pages}"  begin="1" varStatus="index">
+					<li class="page-item"><a class="page-link" href="javascript:;" onclick="ajax(${index.index})">${index.index}</a></li>
+				</c:forEach>
+				<li class="page-item"><a class="page-link" href="javascript:;" onclick="ajax(${pageInfo.pageNum+1})">下一页</a></li>
+				<li class="page-item"><a class="page-link" href="javascript:;" onclick="ajax(${pageInfo.pages})">尾页</a></li>
 			</ul>
-			<ol id="list">
-			<li class="on">1</li>
-			<li>2</li>
-			<li>3</li>
-			<li>4</li>
-			<li>5</li>
-			</ol>
+		</nav></div>
+	</div>
+	<div id="agileinfo" class="agileinfo-gallery-row">
+		<div id="div">
+			<c:forEach items="${pageInfo.list}" var="travel">
+				<div class="col-md-3 col-sm-3 col-xs-6 w3gallery-grids">
+					<a href="<%=request.getContextPath()%>/travel-detail?id=${travel.id}" class="imghvr-hinge-right figure">
+						<img src="<%=request.getContextPath()%>/images/g1.jpg" alt="" title="Trendy Travel Image"/>
+						<div class="agile-figcaption">
+							<h4>${travel.title}</h4>
+							<p>${travel.info}</p>
+						</div>
+					</a>
+				</div>
+			</c:forEach>
 		</div>
-		<div id="classify">
-			<div id="con1" class="cons">
-				<h3>热门景点</h3>
-				<div class="imgs">
-					<img src="<%=request.getContextPath()%>/img/con1_1.jpg" alt="con1_1" id="con1_1" class="photos"/>
-					<img src="<%=request.getContextPath()%>/img/con1_2.jpg" alt="con1_2" id="con1_2" class="photos"/>
-					<img src="<%=request.getContextPath()%>/img/con1_3.jpg" alt="con1_3" id="con1_3" class="photos"/>
-				</div>
-				<div class="texts">
-					<span class="products">三亚</span>
-					<span class="products">张家界</span>
-					<span class="products">武夷山</span>
-				</div>
+
+		<div class="clearfix"> </div>
+	</div>
+</div>
+<!-- //Gallery -->
+<div class="tlinks">
+<%--	Collect from <a href="http://www.cssmoban.com/" >企业网站模板</a>--%>
+</div>
+<!-- team -->
+<c:if test="${user.username ==null}">
+	<div class="team" id="team">
+		<div class="container">
+			<h3 class="title-w3-agile">登录中心</h3>
+			<div class="team-grids">
+				<form action="<%=request.getContextPath()%>/login" method="post">
+					<div class="form-group">
+						<label for="exampleInputEmail1">账号</label>
+						<input type="text" name="username" class="form-control" id="exampleInputEmail1" placeholder="输入账号...">
+							<%--					<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>--%>
+					</div>
+					<div class="form-group">
+						<label for="exampleInputPassword1">密码</label>
+						<input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="输入密码...">
+					</div>
+					<div class="form-group form-check">
+						<!--
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                          -->
+					</div>
+					<button type="submit" class="btn btn-primary">登录</button>
+				</form>
+
+				<div class="clearfix"> </div>
 			</div>
-			<div id="con2" class="cons">
-				<h3>周边景点</h3>
-				<div class="imgs">
-					<img src="<%=request.getContextPath()%>/img/con2_1.jpg" alt="con2_1" id="con2_1" class="photos"/>
-					<img src="<%=request.getContextPath()%>/img/con2_2.jpg" alt="con2_2" id="con2_2" class="photos"/>
-					<img src="<%=request.getContextPath()%>/img/con2_3.jpg" alt="con2_3" id="con2_3" class="photos"/>
-				</div>
-				<div class="texts">
-					<span class="products">梅山龙宫</span>
-					<span class="products">湄江风景区</span>
-					<span class="products">紫鹊界梯田</span>
-				</div>
-			</div>
-			<div id="con3" class="cons">
-				<h3>一日游</h3>
-				<div class="imgs">
-					<img src="<%=request.getContextPath()%>/img/con3_1.jpeg" alt="con3_1" id="con3_1" class="photos"/>
-					<img src="<%=request.getContextPath()%>/img/con3_2.jpg" alt="con3_2" id="con3_2" class="photos"/>
-					<img src="<%=request.getContextPath()%>/img/con3_3.jpg" alt="con3_3" id="con3_3" class="photos"/>
-				</div>
-				<div class="texts">
-					<span class="products">都江堰</span>
-					<span class="products">八达岭长城</span>
-					<span class="products">西安秦始皇陵</span>
-				</div>
-			</div>
-			<div id="con4" class="cons">
-				<h3>周末游</h3>
-				<div class="imgs">
-					<img src="img/con4_1.jpg" alt="con4_1" id="con4_1" class="photos"/>
-					<img src="img/con4_2.jpg" alt="con4_2" id="con4_2" class="photos"/>
-					<img src="img/con4_3.jpg" alt="con4_3" id="con4_3" class="photos"/>
-				</div>
-				<div class="texts">
-					<span class="products">泰山</span>
-					<span class="products">衡山</span>
-					<span class="products">华山</span>
-				</div>
-			</div>
-			<div id="con5" class="cons">
-				<h3>跟团游</h3>
-				<div class="imgs">
-					<img src="img/con5_1.jpg" alt="con5_1" id="con5_1" class="photos"/>
-					<img src="img/con5_2.jpg" alt="con5_2" id="con5_2" class="photos"/>
-					<img src="img/con5_3.jpg" alt="con5_3" id="con5_3" class="photos"/>
-				</div>
-				<div class="texts">
-					<span class="products">西北青海湖</span>
-					<span class="products">云南香格里拉</span>
-					<span class="products">新疆吐鲁番</span>
-				</div>
-			</div>
-			<div id="con6" class="cons">
-				<h3>自由行</h3>
-				<div class="imgs">
-					<img src="img/con6_1.jpg" alt="con6_1" id="con6_1" class="photos"/>
-					<img src="img/con6_2.jpg" alt="con6_1" id="con6_2" class="photos"/>
-					<img src="img/con6_3.jpg" alt="con6_1" id="con6_3" class="photos"/>
-				</div>
-				<div class="texts">
-					<span class="products">长隆</span>
-					<span class="products">丽江</span>
-					<span class="products">长白山</span>
-				</div>
-			</div>
-			<div id="con7" class="cons">
-				<h3>出国游</h3>
-				<div class="imgs">
-					<img src="img/con7_1.jpg" alt="con7_1" id="con7_1" class="photos"/>
-					<img src="img/con7_2.jpg" alt="con7_2" id="con7_2" class="photos"/>
-					<img src="img/con7_3.jpg" alt="con7_3" id="con7_3" class="photos"/>
-				</div>
-				<div class="texts">
-					<span class="products">美国</span>
-					<span class="products">英国</span>
-					<span class="products">日本</span>
-				</div>
-			</div>
-			<div id="con8" class="cons">
-				<h3>定制旅游</h3>
-				<div class="imgs">
-					<img src="img/con8_1.jpg" alt="con8_1" id="con8_1" class="photos"/>
-					<img src="img/con8_2.jpg" alt="con8_2" id="con8_2" class="photos"/>
-					<img src="img/con8_3.jpg" alt="con8_3" id="con8_3" class="photos"/>
-				</div>
-				<div class="texts">
-					<span class="products">个人定制</span>
-					<span class="products">家庭定制</span>
-					<span class="products">公司定制</span>
-				</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+</c:if>
+
+<!-- //team -->
+<!-- testimonials -->
+<c:if test="${user==null}">
+	<div class="testimonials" id="testi">
+		<div class="container">
+			<h3 class="title-w3-agile">注册中心</h3>
+			<div class="agile_testimonials_grids">
+				<form action="/register" method="post">
+					<div class="form-group">
+						<label for="exampleInputEmail2">账号</label>
+						<input type="text" name="username" class="form-control" id="exampleInputEmail2" placeholder="输入账号...">
+
+					</div>
+					<div class="form-group">
+						<label for="exampleInputPassword2">密码</label>
+						<input type="password" name="password" class="form-control" id="exampleInputPassword2" placeholder="输入密码...">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputPassword3">确认密码</label>
+						<input type="password" name="rePassword" class="form-control" id="exampleInputPassword3" placeholder="输入确定密码...">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputPassword4">昵称</label>
+						<input type="text" name="nick_name" class="form-control" id="exampleInputPassword4" placeholder="输入昵称...">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputPassword5">性别</label>
+						<input type="radio" name="sex" id="exampleInputPassword51" value="1"> 男
+						<input type="radio" name="sex" id="exampleInputPassword5" value="0"> 女
+					</div>
+					<div class="form-group">
+						<label for="exampleInputPassword6">电话</label>
+						<input type="text" name="tellphone" class="form-control" id="exampleInputPassword6" placeholder="输入电话...">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputPassword7">身份证</label>
+						<input type="text" name="id_card" class="form-control" id="exampleInputPassword7" placeholder="输入身份证...">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputPassword8">地址</label>
+						<input type="text" name="address" class="form-control" id="exampleInputPassword8" placeholder="输入地址...">
+					</div>
+					<button type="submit" class="btn btn-primary">注册</button>
+				</form>
 			</div>
 		</div>
 	</div>
-	
-	<!--底部栏-->
-	<div id="footer">
-		<div id="footer1">	
-		<p>娄底市阳光旅行社很高兴为您提供旅游服务！</p>
-		<p class="bold">热门旅游省份</p>		
-		<p>云南 &nbsp;&nbsp;海南 &nbsp;&nbsp;西藏 &nbsp;&nbsp;浙江 &nbsp;&nbsp;山西 &nbsp;&nbsp;湖南 &nbsp;&nbsp;广东 &nbsp;&nbsp;江苏 &nbsp;&nbsp;安徽 &nbsp;&nbsp;福建 &nbsp;&nbsp;广西 &nbsp;&nbsp;贵州 &nbsp;&nbsp;新疆 &nbsp;&nbsp;四川 &nbsp;&nbsp;台湾</p>
-		<p class="bold">热门目的地旅游</p>
-		<p>香港旅游 &nbsp;&nbsp;厦门旅游 &nbsp;&nbsp;青岛旅游 &nbsp;&nbsp;桂林旅游 &nbsp;&nbsp;北京旅游 &nbsp;&nbsp;丽江旅游 &nbsp;&nbsp;三亚旅游 &nbsp;&nbsp;大理旅游</p>
-		<p class="bold">热门国家旅游</p>
-		<p>泰国旅游 &nbsp;&nbsp;法国旅游 &nbsp;&nbsp;英国旅游 &nbsp;&nbsp;越南旅游 &nbsp;&nbsp;日本旅游 &nbsp;&nbsp;美国旅游 &nbsp;&nbsp;澳大利亚旅游 &nbsp;&nbsp;土耳其旅游 &nbsp;&nbsp;俄罗斯旅游</p>
-		<p><span class="bold" id="bold">友情链接</span> 酒店大全 &nbsp;&nbsp;神州租车 &nbsp;&nbsp;元旦旅游 &nbsp;&nbsp;清明旅游 &nbsp;&nbsp;五一旅游 &nbsp;&nbsp;端午旅游 &nbsp;&nbsp;爱奇艺旅游 &nbsp;&nbsp;网易旅游</p>
+</c:if>
+
+<!-- //testimonials -->
+<!-- contact -->
+<!--
+<div class="contact" id="contact">
+	<div class="container">
+		<h3 class="title-w3-agile">Contact Us</h3>
+		<div class="col-xs-7 contact-agileits-w3layouts">
+			<h5 class="sub">Send us a message</h5>
+			<form action="#" method="post">
+				<input type="text" class="name" name="Your Name" placeholder="Name" required="" />
+				<input type="email" class="email" name="Your Email" placeholder="Email" required="" />
+				<input type="text" Name="Phone Number" placeholder="Number" required="" />
+				<textarea name="Message" placeholder="Message" required></textarea>
+				<input type="submit" value="Submit">
+			</form>
 		</div>
-		<div id="footer2">
-			<span>返回首页</span>
-			<span>代理合作</span>
-			<span>加盟合作</span>
-			<span>酒店加盟</span>
-			<span>隐私政策</span>
-			<span>友情链接</span>
-			<span id="bottom">Copyright@2019-2019,index.com.All right reserved</span>
-			<p>ICP证：湘**-********</p> 
+		<div class="col-xs-5 map-agileits-w3layouts">
+			<iframe src=""></iframe>
 		</div>
 	</div>
-	<!--返回顶部-->
-	<a href="#header" id="backtop">
-		<img src="img/backtop.jpg"/>
-	</a>
-	<!--侧边栏-->
-	<div id="sidebar">		
-		<a href="personal.html"><img src="img/personal.jpg" onmouseover="Showdiv1()" onmouseout="Hidderdiv1()"/></a>				
-		<a href="mycollection.html"><img src="img/Mycollection.jpg" onmouseover="Showdiv2()" onmouseout="Hidderdiv2()"/></a>
-		<a href="mynews.html"><img src="img/msg.jpg" onmouseover="Showdiv5()" onmouseout="Hidderdiv5()"/></a>
-		<a href="myorder.html"><img src="img/myorder.jpg" onmouseover="Showdiv3()" onmouseout="Hidderdiv3()"/></a>		
-		<a href="#"><img src="img/phone.png" onmouseover="Showdiv4()" onmouseout="Hidderdiv4()"/></a>								
-	</div>
-	<div id="sidebar_text">
-		<div class="wenzi" id="text1">个人信息</div>
-		<div class="wenzi" id="text2">我的收藏</div>
-		<div class="wenzi" id="text5">消息通知</div>
-		<div class="wenzi" id="text3">我的订单</div>
-		<div class="wenzi" id="text4">
-			<img src="img/chat.jpg" id="chat"/>
+</div>
+-->
+<!-- //contact -->
+<!-- newsletter -->
+<!--
+<div class="footer-top">
+	<div class="container">
+		<div class="col-xs-8 agile-leftmk">
+			<h3 class="title-w3-agile">Subscribe Here</h3>
+			<p>New Blog Posts delivered fresh to your inbox.</p>
+			<form action="#" method="post">
+				<input type="email" placeholder="E-mail" name="email" required="">
+				<input type="submit" value="Subscribe">
+			</form>
+		</div>
+		<div class="col-xs-4 w3l-rightmk">
+			<img src="images/4.png" alt=" ">
 		</div>
 	</div>
-	<script type="text/javascript" src="<%=request.getContextPath()%>/js/sidebar.js"></script>
-	</body>
+</div>
+-->
+<!-- //newsletter -->
+<!-- footer start here -->
+<div class="footer-agile">
+	<div class="container">
+		<div class="footer-btm-agileinfo">
+			<div class="col-md-3 col-xs-3 footer-grid w3social">
+				<h3>Quick Links</h3>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#about" class="scroll">About</a></li>
+					<li><a href="#gallery" class="scroll">Portfolio</a></li>
+					<li><a href="#contact" class="scroll">Contact Us</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 col-xs-3 footer-grid">
+				<h3>Useful Info</h3>
+				<ul>
+					<li><i class="fa fa-map-marker"></i>+012 345 6789</li>
+					<li><i class="fa fa-fax"></i>+987 654 3210</li>
+					<li><i class="fa fa-phone"></i>Kmome St, NY 10002, Canada.</li>
+					<li><i class="fa fa-envelope-o"></i><a href="mailto:example@mail.com">mail@example.com</a></li>
+				</ul>
+			</div>
+			<div class="col-md-6 col-xs-6 footer-grid footer-review">
+				<h3>Few Words</h3>
+				<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
+				<p class="w3l-para-mk">Unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+</div>
+<!-- //footer end here -->
+
+<!-- js -->
+<script src="<%=request.getContextPath()%>/js/jquery-2.2.3.min.js"></script>
+<script>
+
+            function ajax(page){
+                $.ajax(
+                    {
+                        url :"<%=request.getContextPath()%>/ajax",
+                        type :"post",
+                        data :{
+                            "pageNum":page
+                        },
+						dataType:"json",
+                         success : function (result) {
+                        	alert(result.pages)
+                        	alert(result.pageNum)
+							 alert(result.travelList.length);
+							 var list = result.travelList;
+							 if ($("#div").length>0){
+								 $(".col-md-3").remove();
+							 }
+							 for (var i = 0; i < list.length; i++) {
+								 $("#div").append("" +
+												"<div class=\"col-md-3 col-sm-3 col-xs-6 w3gallery-grids\">\n" +
+												"\t\t\t\t<a href=\"<%=request.getContextPath()%>/travel-detail?id="+list[i].id+"\" class=\"imghvr-hinge-right figure\">\n" +
+												"\t\t\t\t\t<img src=\"<%=request.getContextPath()%>/images/g1.jpg\" alt=\"\" title=\"Trendy Travel Image\"/>\n" +
+												"\t\t\t\t\t<div class=\"agile-figcaption\">\n" +
+												"\t\t\t\t\t\t<h4>"+list[i].title+"</h4>\n" +
+												"\t\t\t\t\t\t<p>"+list[i].info+"</p>\n" +
+												"\t\t\t\t\t</div>\n" +
+												"\t\t\t\t</a>\n" +
+												"\t\t\t</div>" +
+												"");
+									}
+									if ($(".page-item").length>0) {
+										$(".page-item").remove();
+									}
+									$("#pagination").append("<li class=\"page-item\"><a class=\"page-link\" onclick=\"ajax(1)\">首页</a></li>");
+									$("#pagination").append("<li class=\"page-item\"><a class=\"page-link\" onclick=\"ajax("+(result.pageNum-1)+")\">上一页</a></li>");
+									for (var i = 1; i <=result.pages; i++) {
+										$("#pagination").append("<li class=\"page-item\"><a class=\"page-link\" onclick=\"ajax("+i+")\">"+i+"</a></li>");
+									}
+									$("#pagination").append("<li <li class=\"page-item\"><a class=\"page-link\" onclick=\"ajax("+(result.pageNum+1)+")\">下一页</a></li>");
+									$("#pagination").append("<li class=\"page-item\"><a class=\"page-link\" onclick=\"ajax("+result.pages+")\">尾页</a></li>");
+							}
+                    }
+                )
+            }
+
+</script>
+<!-- //js -->
+<!-- Progressive-Effects-Animation-JavaScript -->
+<script type="text/javascript" src="<%=request.getContextPath()%>/js/numscroller-1.0.js"></script>
+<!-- //Progressive-Effects-Animation-JavaScript -->
+<!-- responsiveslides -->
+<script src="<%=request.getContextPath()%>/js/responsiveslides.min.js"></script>
+<script>
+	// You can also use "$(window).load(function() {"
+	$(function () {
+		// Slideshow 4
+		$("#slider3").responsiveSlides({
+			auto: true,
+			pager: true,
+			nav: false,
+			speed: 500,
+			namespace: "callbacks",
+			before: function () {
+				$('.events').append("<li>before event fired.</li>");
+			},
+			after: function () {
+				$('.events').append("<li>after event fired.</li>");
+			}
+		});
+	});
+</script>
+<!-- //responsiveslides -->
+<!-- simple-lightbox -->
+<script type="text/javascript" src="<%=request.getContextPath()%>/js/simple-lightbox.min.js"></script>
+<script>
+	$(function () {
+		var gallery = $('.agileinfo-gallery-row a').simpleLightbox({
+			navText: ['&lsaquo;', '&rsaquo;']
+		});
+	});
+</script>
+<link href='<%=request.getContextPath()%>/css/simplelightbox.min.css' rel='stylesheet' type='text/css'>
+<!-- Light-box css -->
+<!-- //simple-lightbox -->
+<!-- start-smooth-scrolling -->
+<script type="text/javascript" src="<%=request.getContextPath()%>/js/move-top.js"></script>
+<script type="text/javascript" src="<%=request.getContextPath()%>/js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function ($) {
+		$(".scroll").click(function (event) {
+			event.preventDefault();
+
+			$('html,body').animate({
+				scrollTop: $(this.hash).offset().top
+			}, 1000);
+		});
+	});
+</script>
+<!-- //end-smooth-scrolling -->
+<!-- smooth-scrolling-of-move-up -->
+<script type="text/javascript">
+	$(document).ready(function () {
+		/*
+        var defaults = {
+            containerID: 'toTop', // fading element id
+            containerHoverID: 'toTopHover', // fading element hover id
+            scrollSpeed: 1200,
+            easingType: 'linear'
+        };
+        */
+
+		$().UItoTop({
+			easingType: 'easeOutQuart'
+		});
+
+	});
+</script>
+<!-- //smooth-scrolling-of-move-up -->
+<!-- Flexslider-js -->
+<script type="text/javascript">
+	$(window).load(function () {
+		$("#flexiselDemo1").flexisel({
+			visibleItems: 1,
+			animationSpeed: 1000,
+			autoPlay: false,
+			autoPlaySpeed: 5000,
+			pauseOnHover: true,
+			enableResponsiveBreakpoints: true,
+			responsiveBreakpoints: {
+				portrait: {
+					changePoint: 480,
+					visibleItems: 1
+				},
+				landscape: {
+					changePoint: 640,
+					visibleItems: 1
+				},
+				tablet: {
+					changePoint: 768,
+					visibleItems: 1
+				}
+			}
+		});
+	});
+</script>
+<script type="text/javascript" src="<%=request.getContextPath()%>/js/jquery.flexisel.js"></script>
+<!-- //Flexslider-js -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="<%=request.getContextPath()%>/js/bootstrap.js"></script>
+<!-- //Bootstrap core JavaScript -->
+
+</body>
+
 </html>
