@@ -7,34 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e55666cd-205d-45ee-96ae-00042f791d93" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/collection_deatil.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/zlw/dao/CollectionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/zlw/dao/CollectionDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/resources/com/zlw/dao/CollectionDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/resources/com/zlw/dao/CollectionDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/zlw/dao/CollectionDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/com/zlw/dao/CollectionDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/zlw/dao/CollectionDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/com/zlw/dao/CollectionDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/zlw/service/CollectionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/zlw/service/CollectionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/zlw/service/impl/CollectionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/zlw/service/impl/CollectionServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/com/zlw/service/CollectionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/com/zlw/service/CollectionService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/com/zlw/service/impl/CollectionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/com/zlw/service/impl/CollectionServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/zlw/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/zlw/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/collection_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/collection_list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/order_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/order_list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/password-update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/password-update.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/travel_detail.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/com/zlw/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/com/zlw/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/META-INF/web.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web/target/web.war" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/zlw/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/zlw/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/html/qiantai/collection_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/html/qiantai/collection_list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/html/qiantai/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/html/qiantai/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/html/qiantai/login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/html/qiantai/order_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/html/qiantai/order_list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/html/qiantai/password-update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/html/qiantai/password-update.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/html/qiantai/travel_detail.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/dao-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/dao-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/service-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zlw.iml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -66,10 +46,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/src/main/java/com/zlw/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
+            <state relative-caret-position="2530">
               <caret line="135" column="52" selection-start-line="135" selection-start-column="52" selection-end-line="135" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -79,10 +59,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1408">
+              <caret line="64" column="33" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/top.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="235">
+              <caret line="258" column="53" selection-start-line="258" selection-start-column="53" selection-end-line="258" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/src/main/java/com/zlw/controller/back/AdminController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="232" column="52" lean-forward="true" selection-start-line="232" selection-start-column="7" selection-end-line="232" selection-end-column="52" />
+            <state relative-caret-position="4378">
+              <caret line="232" column="52" selection-start-line="232" selection-start-column="7" selection-end-line="232" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -212,7 +210,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="D:/apache-maven-3.6.0" />
+        <option name="mavenHome" value="D:/apache-maven-3.6.1" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -277,227 +275,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zlw" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zlw" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zlw" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zlw" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zlw" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zlw" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zlw" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zlw" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zlw" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zlw" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zlw" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zlw" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zlw" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zlw" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zlw" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zlw" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zlw" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zlw" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zlw" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zlw" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zlw" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zlw" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zlw" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zlw" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zlw" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zlw" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zlw" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zlw" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="back" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zlw" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zlw" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zlw" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zlw" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="qiantai" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -507,7 +287,7 @@
     <property name="android.sdk.path" value="D:/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -660,7 +440,9 @@
       <workItem from="1557219493861" duration="8676000" />
       <workItem from="1557240623279" duration="332000" />
       <workItem from="1557273364739" duration="9202000" />
-      <workItem from="1557362474237" duration="10133000" />
+      <workItem from="1557362474237" duration="10196000" />
+      <workItem from="1557401956132" duration="377000" />
+      <workItem from="1557456063187" duration="25000" />
     </task>
     <task id="LOCAL-00001" summary="毕业论文">
       <created>1557368908296</created>
@@ -669,7 +451,14 @@
       <option name="project" value="LOCAL" />
       <updated>1557368908296</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="毕业论文">
+      <created>1557377843052</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1557377843052</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -705,13 +494,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92393000" />
+    <option name="totallyTimeSpent" value="92858000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22995462" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2375189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -721,7 +509,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32786885" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.43114755" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.43114755" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -967,96 +755,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/travel-detail.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="515" column="20" selection-start-line="515" selection-start-column="20" selection-end-line="515" selection-end-column="20" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#div#5;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#7;n#ul#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#12680#12686#1#HTML" expanded="true" />
-            <element signature="e#13721#13727#0#HTML" expanded="true" />
-            <element signature="e#13728#13734#0#HTML" expanded="true" />
-            <element signature="e#13735#13741#0#HTML" expanded="true" />
-            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#15378#15384#0#HTML" expanded="true" />
-            <element signature="e#15384#15390#0#HTML" expanded="true" />
-            <element signature="e#15393#15399#0#HTML" expanded="true" />
-            <element signature="e#15399#15405#0#HTML" expanded="true" />
-            <element signature="e#15408#15414#0#HTML" expanded="true" />
-            <element signature="e#15414#15420#0#HTML" expanded="true" />
-            <element signature="e#15423#15429#0#HTML" expanded="true" />
-            <element signature="e#15429#15435#0#HTML" expanded="true" />
-            <element signature="e#15438#15444#0#HTML" expanded="true" />
-            <element signature="e#15444#15450#0#HTML" expanded="true" />
-            <element signature="e#15453#15459#0#HTML" expanded="true" />
-            <element signature="e#15459#15465#0#HTML" expanded="true" />
-            <element signature="e#15468#15474#0#HTML" expanded="true" />
-            <element signature="e#15474#15480#0#HTML" expanded="true" />
-            <element signature="e#15483#15489#0#HTML" expanded="true" />
-            <element signature="e#15489#15495#0#HTML" expanded="true" />
-            <element signature="e#15498#15504#0#HTML" expanded="true" />
-            <element signature="e#15504#15510#0#HTML" expanded="true" />
-            <element signature="e#15513#15519#0#HTML" expanded="true" />
-            <element signature="e#15519#15525#0#HTML" expanded="true" />
-            <element signature="e#15528#15534#0#HTML" expanded="true" />
-            <element signature="e#15534#15540#0#HTML" expanded="true" />
-            <element signature="e#15543#15549#0#HTML" expanded="true" />
-            <element signature="e#15549#15555#0#HTML" expanded="true" />
-            <element signature="e#15558#15564#0#HTML" expanded="true" />
-            <element signature="e#15564#15570#0#HTML" expanded="true" />
-            <element signature="e#15573#15579#0#HTML" expanded="true" />
-            <element signature="e#15579#15585#0#HTML" expanded="true" />
-            <element signature="e#15644#15650#0#HTML" expanded="true" />
-            <element signature="e#15650#15656#0#HTML" expanded="true" />
-            <element signature="e#15661#15667#0#HTML" expanded="true" />
-            <element signature="e#15667#15673#0#HTML" expanded="true" />
-            <element signature="e#15678#15684#0#HTML" expanded="true" />
-            <element signature="e#15684#15690#0#HTML" expanded="true" />
-            <element signature="e#15695#15701#0#HTML" expanded="true" />
-            <element signature="e#15701#15707#0#HTML" expanded="true" />
-            <element signature="e#15712#15718#0#HTML" expanded="true" />
-            <element signature="e#15718#15724#0#HTML" expanded="true" />
-            <element signature="e#15729#15735#0#HTML" expanded="true" />
-            <element signature="e#15735#15741#0#HTML" expanded="true" />
-            <element signature="e#15746#15752#0#HTML" expanded="true" />
-            <element signature="e#15752#15758#0#HTML" expanded="true" />
-            <element signature="e#15818#15824#0#HTML" expanded="true" />
-            <element signature="e#15824#15830#0#HTML" expanded="true" />
-            <element signature="e#15835#15841#0#HTML" expanded="true" />
-            <element signature="e#15841#15847#0#HTML" expanded="true" />
-            <element signature="e#15852#15858#0#HTML" expanded="true" />
-            <element signature="e#15858#15864#0#HTML" expanded="true" />
-            <element signature="e#15869#15875#0#HTML" expanded="true" />
-            <element signature="e#15875#15881#0#HTML" expanded="true" />
-            <element signature="e#15886#15892#0#HTML" expanded="true" />
-            <element signature="e#15892#15898#0#HTML" expanded="true" />
-            <element signature="e#15903#15909#0#HTML" expanded="true" />
-            <element signature="e#15909#15915#0#HTML" expanded="true" />
-            <element signature="e#15922#15928#0#HTML" expanded="true" />
-            <element signature="e#15928#15934#0#HTML" expanded="true" />
-            <element signature="e#15940#15946#0#HTML" expanded="true" />
-            <element signature="e#15946#15952#0#HTML" expanded="true" />
-            <element signature="e#16019#16025#0#HTML" expanded="true" />
-            <element signature="e#16025#16031#0#HTML" expanded="true" />
-            <element signature="e#16036#16042#0#HTML" expanded="true" />
-            <element signature="e#16042#16048#0#HTML" expanded="true" />
-            <element signature="e#16053#16059#0#HTML" expanded="true" />
-            <element signature="e#16059#16065#0#HTML" expanded="true" />
-            <element signature="e#16070#16076#0#HTML" expanded="true" />
-            <element signature="e#16076#16082#0#HTML" expanded="true" />
-            <element signature="e#16087#16093#0#HTML" expanded="true" />
-            <element signature="e#16093#16099#0#HTML" expanded="true" />
-            <element signature="e#16104#16110#0#HTML" expanded="true" />
-            <element signature="e#16110#16116#0#HTML" expanded="true" />
-            <element signature="e#16122#16128#0#HTML" expanded="true" />
-            <element signature="e#16128#16134#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/travel-detail.jsp" />
     <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/bottom.jsp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1074,31 +773,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/collection_list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/info-update.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" column="116" selection-start-line="6" selection-start-column="92" selection-end-line="6" selection-end-column="116" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/top.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="258" column="53" lean-forward="true" selection-start-line="258" selection-start-column="53" selection-end-line="258" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1408">
-          <caret line="64" column="33" lean-forward="true" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -1165,13 +843,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e7aa027f-7b5a-4850-89c7-11967e64c607/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="58" column="13" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e7aa027f-7b5a-4850-89c7-11967e64c607/console.sql" />
     <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/collection_list.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="167">
@@ -1179,13 +851,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/collection_detail.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/collection_detail.jsp" />
     <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/houtai/travel_detail.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -1200,23 +866,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/zlw/controller/back/AdminController.java">
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/zlw/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="232" column="52" lean-forward="true" selection-start-line="232" selection-start-column="7" selection-end-line="232" selection-end-column="52" />
+        <state relative-caret-position="2530">
+          <caret line="135" column="52" selection-start-line="135" selection-start-column="52" selection-end-line="135" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/zlw/controller/UserController.java">
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="135" column="52" selection-start-line="135" selection-start-column="52" selection-end-line="135" selection-end-column="52" />
+        <state relative-caret-position="1408">
+          <caret line="64" column="33" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/zlw/controller/back/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4378">
+          <caret line="232" column="52" selection-start-line="232" selection-start-column="7" selection-end-line="232" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/top.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="258" column="53" selection-start-line="258" selection-start-column="53" selection-end-line="258" selection-end-column="53" />
         </state>
       </provider>
     </entry>
