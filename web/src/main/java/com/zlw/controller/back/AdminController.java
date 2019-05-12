@@ -305,7 +305,7 @@ public class AdminController {
                     if(path.indexOf(".")!=-1){
                         type = path.substring(path.lastIndexOf("."));
                     }
-                    path = "/download/images/"+System.currentTimeMillis()+type;
+                    path = "/images/"+System.currentTimeMillis()+type;
                     InputStream inputStream = item.getInputStream();
                     FileOutputStream fileOutputStream = new FileOutputStream(rootPath+path);
                     int len=0;

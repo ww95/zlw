@@ -26,16 +26,15 @@
     </select>
 
     <insert id="insertList" parameterType="java.util.List">
-        insert into order_table(order_number, user_id, travel_id, total_adult, total_children, total_prices, is_play, comments) VALUES
+        insert into order_table(order_number, user_id, travel_id, total_adult, total_children, total_prices, is_play) VALUES
         <foreach collection="list" item="order" separator=",">
-            (#{order.orderNumber},#{order.userId},#{order.travelId},#{order.totalAdultNumber},#{order.totalChildrenNumber},#{order.totalPrices},#{order.isPlay},#{order.comments})
+            (#{order.orderNumber},#{order.userId},#{order.travelId},#{order.totalAdultNumber},#{order.totalChildrenNumber},#{order.totalPrices},#{order.isPlay})
         </foreach>
     </insert>
 
     <insert id="insertOne" parameterType="com.zlw.bean.Order">
-        insert into order_table(order_number, user_id, travel_id, total_adult, total_children, total_prices, is_play, comments) VALUES
-            (#{orderNumber},#{userId},#{travelId},#{totalAdultNumber},#{totalChildrenNumber},#{totalPrices},#{isPlay},#{comments})
-
+        insert into order_table(order_number, user_id, travel_id, total_adult, total_children, total_prices, is_play) VALUES
+            (#{orderNumber},#{userId},#{travelId},#{totalAdultNumber},#{totalChildrenNumber},#{totalPrices},#{isPlay})
     </insert>
 
     <update id="update" parameterType="com.zlw.bean.Order">

@@ -50,7 +50,7 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<div class="w3menu navbar-right">
-						<c:if test="${user == null}">
+						<c:if test="${session_user == null}">
 							<ul class="nav navbar">
 								<li><a href="<%=request.getContextPath()%>/index" class="active">首页</a></li>
 								<li><a href="#team" class="scroll">个人中心</a></li>
@@ -64,12 +64,12 @@
 								<li><a href="#team" class="scroll">收藏中心</a></li>
 							</ul>
 						</c:if>
-						<c:if test="${user != null}">
+						<c:if test="${session_user!=null&&session_user.u_id!=null}">
 							<ul class="nav navbar">
 								<li><a href="<%=request.getContextPath()%>/index" class="active">首页</a></li>
 								<li><a href="<%=request.getContextPath()%>/user/order-list" class="active">个人中心</a></li>
 								<li><a href="#gallery" class="scroll">旅游列表</a></li>
-								<li><a href="#" class="scroll">${user.username}</a></li>
+								<li><a href="#" class="scroll">${session_user.username}</a></li>
 								<li><a href="<%=request.getContextPath()%>/user/collection-list" class="active">收藏中心</a></li>
 							</ul>
 						</c:if>
@@ -220,7 +220,125 @@
 <%--这里就是一些分类信息--%>
 <div id="gallery" class="gallery">
 	<div class="container">
-		<h3 class="title-w3-agile">Portfolio</h3>
+		<h3 class="title-w3-agile">Portfolio
+			<div>
+
+					<div class="form-group">
+						<input type="text" class="form-control" id="search" aria-describedby="emailHelp" placeholder="Enter email">
+					</div>
+					<button type="button" onclick="searchTravels(document.getElementById('search').value,1)" class="btn btn-primary">search</button>
+				<script>
+					function searchTravels(searchValue,page) {
+						alert(searchValue)
+						$.ajax(
+								{
+									url :"<%=request.getContextPath()%>/searchByString",
+									type :"post",
+									data :{
+										"search":searchValue,
+										"pageNum":page
+									},
+									dataType:"json",
+									success : function (result) {
+										alert("Ajax访问成功")
+										var list = result.travelList;
+										var travelId = result.id;
+										if ($("#div").length>0){
+											$(".col-md-3").remove();
+										}
+										//添加数据
+										for (var i = 0; i < list.length; i++) {
+											$("#div").append("" +
+													"<div class=\"col-md-3 col-sm-3 col-xs-6 w3gallery-grids\">\n" +
+													"\t\t\t\t<a href=\"<%=request.getContextPath()%>/travel-detail?id="+list[i].id+"\" class=\"imghvr-hinge-right figure\">\n" +
+													"\t\t\t\t\t<img src=\"<%=request.getContextPath()%>/images/g1.jpg\" alt=\"\" title=\"Trendy Travel Image\"/>\n" +
+													"\t\t\t\t\t<div class=\"agile-figcaption\">\n" +
+													"\t\t\t\t\t\t<h4>"+list[i].title+"</h4>\n" +
+													"\t\t\t\t\t\t<p>"+list[i].info+"</p>\n" +
+													"\t\t\t\t\t</div>\n" +
+													"\t\t\t\t</a>\n" +
+													"\t\t\t</div>" +
+													"");
+										}
+										//对于下标
+										if ($(".page-item").length>0) {
+											$(".page-item").remove();
+										}
+										var string = result.string+"";
+										$("#pagination").append('<li class="page-item"><a class="page-link" href="javascript:;" onclick="searchTravels(\''+document.getElementById('search').value+'\',1)">首页</a></li>');
+										$("#pagination").append('<li class="page-item"><a class="page-link" href="javascript:;" onclick="searchTravels(\''+document.getElementById('search').value+'\','+(result.pageNum-1)+')">上一页</a></li>');
+										for (var i = 1; i <=result.pages; i++) {
+											$("#pagination").append('<li class="page-item"><a class="page-link" href="javascript:;" onclick="searchTravels(\''+document.getElementById('search').value+'\','+i+')">'+i+'</a></li>');
+										}
+										$("#pagination").append('<li class="page-item"><a class="page-link" href="javascript:;" onclick="searchTravels(\''+document.getElementById('search').value+'\','+(result.pageNum+1)+')">下一页</a></li>');
+										$("#pagination").append('<li class="page-item"><a class="page-link" href="javascript:;" onclick="searchTravels(\''+document.getElementById('search').value+'\','+result.pages+')">尾页</a></li>');
+									}
+								}
+						)
+					}
+				</script>
+			</div>
+		</h3>
+
+		<div>
+			<h4>分类列表</h4>
+			<ul id="pagination2" class="pagination">
+				<c:forEach items="${catalogs}" var="catalog">
+					<li class="page-item2"><a class="page-link" href="javascript:;" onclick="ajaxSearch(${catalog.id},1)">${catalog.title}|</a></li>
+				</c:forEach>
+				<script>
+					function ajaxSearch(id,page) {
+						var travelId=id;
+						$.ajax(
+								{
+									url :"<%=request.getContextPath()%>/search",
+									type :"post",
+									data :{
+										"id":travelId,
+										"pageNum":page
+									},
+									dataType:"json",
+									success : function (result) {
+										var list = result.travelList;
+										var travelId = result.id;
+										if ($("#div").length>0){
+											$(".col-md-3").remove();
+										}
+										//添加数据
+										for (var i = 0; i < list.length; i++) {
+											$("#div").append("" +
+													"<div class=\"col-md-3 col-sm-3 col-xs-6 w3gallery-grids\">\n" +
+													"\t\t\t\t<a href=\"<%=request.getContextPath()%>/travel-detail?id="+list[i].id+"\" class=\"imghvr-hinge-right figure\">\n" +
+													"\t\t\t\t\t<img src=\"<%=request.getContextPath()%>/images/g1.jpg\" alt=\"\" title=\"Trendy Travel Image\"/>\n" +
+													"\t\t\t\t\t<div class=\"agile-figcaption\">\n" +
+													"\t\t\t\t\t\t<h4>"+list[i].title+"</h4>\n" +
+													"\t\t\t\t\t\t<p>"+list[i].info+"</p>\n" +
+													"\t\t\t\t\t</div>\n" +
+													"\t\t\t\t</a>\n" +
+													"\t\t\t</div>" +
+													"");
+										}
+										//对于下标
+										if ($(".page-item").length>0) {
+											$(".page-item").remove();
+										}
+
+										$("#pagination").append('<li class="page-item"><a class="page-link" href="javascript:;" onclick="ajaxSearch('+result.id+',1)">首页</a></li>');
+										$("#pagination").append('<li class="page-item"><a class="page-link" href="javascript:;" onclick="ajaxSearch('+result.id+','+(result.pageNum-1)+')">上一页</a></li>');
+										for (var i = 1; i <=result.pages; i++) {
+											$("#pagination").append('<li class="page-item"><a class="page-link" href="javascript:;" onclick="ajaxSearch('+(result.id)+','+i+')">'+i+'</a></li>');
+										}
+										$("#pagination").append('<li class="page-item"><a class="page-link" href="javascript:;" onclick="ajaxSearch('+result.id+','+(result.pageNum+1)+')">下一页</a></li>');
+										$("#pagination").append('<li class="page-item"><a class="page-link" href="javascript:;" onclick="ajaxSearch('+result.id+','+result.pages+')">尾页</a></li>');
+									}
+								}
+						)
+					}
+				</script>
+			</ul>
+
+		</div>
+
 		<div><nav aria-label="Page navigation example">
 			<ul id="pagination" class="pagination">
 				<li class="page-item"><a class="page-link" href="javascript:;" onclick="ajax(1)">首页</a></li>
@@ -233,6 +351,7 @@
 			</ul>
 		</nav></div>
 	</div>
+<%--    商品列表--%>
 	<div id="agileinfo" class="agileinfo-gallery-row">
 		<div id="div">
 			<c:forEach items="${pageInfo.list}" var="travel">
@@ -253,10 +372,9 @@
 </div>
 <!-- //Gallery -->
 <div class="tlinks">
-<%--	Collect from <a href="http://www.cssmoban.com/" >企业网站模板</a>--%>
 </div>
 <!-- team -->
-<c:if test="${user.username ==null}">
+<c:if test="${session_user==null}">
 	<div class="team" id="team">
 		<div class="container">
 			<h3 class="title-w3-agile">登录中心</h3>
@@ -265,17 +383,12 @@
 					<div class="form-group">
 						<label for="exampleInputEmail1">账号</label>
 						<input type="text" name="username" class="form-control" id="exampleInputEmail1" placeholder="输入账号...">
-							<%--					<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>--%>
 					</div>
 					<div class="form-group">
 						<label for="exampleInputPassword1">密码</label>
 						<input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="输入密码...">
 					</div>
 					<div class="form-group form-check">
-						<!--
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                          -->
 					</div>
 					<button type="submit" class="btn btn-primary">登录</button>
 				</form>
@@ -289,7 +402,7 @@
 
 <!-- //team -->
 <!-- testimonials -->
-<c:if test="${user==null}">
+<c:if test="${session_user==null}">
 	<div class="testimonials" id="testi">
 		<div class="container">
 			<h3 class="title-w3-agile">注册中心</h3>
@@ -336,48 +449,6 @@
 	</div>
 </c:if>
 
-<!-- //testimonials -->
-<!-- contact -->
-<!--
-<div class="contact" id="contact">
-	<div class="container">
-		<h3 class="title-w3-agile">Contact Us</h3>
-		<div class="col-xs-7 contact-agileits-w3layouts">
-			<h5 class="sub">Send us a message</h5>
-			<form action="#" method="post">
-				<input type="text" class="name" name="Your Name" placeholder="Name" required="" />
-				<input type="email" class="email" name="Your Email" placeholder="Email" required="" />
-				<input type="text" Name="Phone Number" placeholder="Number" required="" />
-				<textarea name="Message" placeholder="Message" required></textarea>
-				<input type="submit" value="Submit">
-			</form>
-		</div>
-		<div class="col-xs-5 map-agileits-w3layouts">
-			<iframe src=""></iframe>
-		</div>
-	</div>
-</div>
--->
-<!-- //contact -->
-<!-- newsletter -->
-<!--
-<div class="footer-top">
-	<div class="container">
-		<div class="col-xs-8 agile-leftmk">
-			<h3 class="title-w3-agile">Subscribe Here</h3>
-			<p>New Blog Posts delivered fresh to your inbox.</p>
-			<form action="#" method="post">
-				<input type="email" placeholder="E-mail" name="email" required="">
-				<input type="submit" value="Subscribe">
-			</form>
-		</div>
-		<div class="col-xs-4 w3l-rightmk">
-			<img src="images/4.png" alt=" ">
-		</div>
-	</div>
-</div>
--->
-<!-- //newsletter -->
 <!-- footer start here -->
 <div class="footer-agile">
 	<div class="container">
@@ -426,9 +497,9 @@
                         },
 						dataType:"json",
                          success : function (result) {
-                        	alert(result.pages)
-                        	alert(result.pageNum)
-							 alert(result.travelList.length);
+                        	 // alert(result.pages)
+							 // alert(result.pageNum)
+							 // alert(result.travelList.length);
 							 var list = result.travelList;
 							 if ($("#div").length>0){
 								 $(".col-md-3").remove();
@@ -460,6 +531,10 @@
                     }
                 )
             }
+            function search(catalogId) {
+            	alert(catalogId);
+
+			}
 
 </script>
 <!-- //js -->
@@ -572,3 +647,9 @@
 </body>
 
 </html>
+<script>
+	var msg = "${msg}"
+	if (msg!=""){
+		alert(msg)
+	}
+</script>

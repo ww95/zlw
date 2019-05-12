@@ -33,6 +33,12 @@
     <select id="selectAll" resultMap="travel">
         select * from travel
     </select>
+    <select id="selectAllByCatalog" parameterType="Integer" resultMap="travel">
+        select * from travel where t_catalog = #{catalogId}
+    </select>
+    <select id="selectBySearch" parameterType="String" resultMap="travel">
+        select * from travel where t_title like concat('%',#{sreach},'%') or t_destination like concat('%',#{sreach},'%')
+    </select>
     <delete id="deleteById" parameterType="Integer">
         delete from travel where t_id=#{id}
     </delete>

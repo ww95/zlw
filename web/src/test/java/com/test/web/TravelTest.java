@@ -77,4 +77,12 @@ public class TravelTest {
     public void getTravels(){
         System.out.println(travelService.getList());
     }
+    @Test
+    public void getTravelsByCatalog(){
+        System.out.println(travelService.getListByCatalog(3));
+    }
+    @Test
+    public void getTravelsBySearch(){
+        System.out.println(travelService.getBySearch("海南"));
+    }
 }

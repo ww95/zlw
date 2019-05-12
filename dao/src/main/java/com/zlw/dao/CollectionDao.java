@@ -12,6 +12,8 @@ public interface CollectionDao {
     List<Collections> selectAll();
     List<Collections> selectAllByUser(Integer id);
     Collections selectOne(Integer id);
+    Collections selectByTravel(Collections collections);
     void update(Collections collection);
     void deleteById(Integer id);
+    void deleteByTravelId(Collections collections);
 }

@@ -21,6 +21,9 @@
     <select id="selectOne" parameterType="Integer" resultMap="collection">
         select * from collection where c_id=#{id}
     </select>
+    <select id="selectByTravel" parameterType="com.zlw.bean.Collections" resultMap="collection">
+        select * from collection where travel_id=#{travelId} and  user_id=#{userId}
+    </select>
 
     <insert id="insertList" parameterType="java.util.List">
         insert into collection(user_id, travel_id) values
@@ -45,5 +48,9 @@
 
     <delete id="deleteById" parameterType="Integer">
         delete from collection where c_id=#{id}
+    </delete>
+
+    <delete id="deleteByTravelId" parameterType="com.zlw.bean.Collections">
+        delete from collection where  user_id=#{userId} and  travel_id=#{travelId}
     </delete>
 </mapper>

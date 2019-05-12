@@ -38,6 +38,11 @@ public class CollectionServiceImpl implements CollectionService {
     }
 
     @Override
+    public Collections getByTravel(Collections collections) {
+        return collectionDao.selectByTravel(collections);
+    }
+
+    @Override
     public void edit(Collections collection) {
         collectionDao.update(collection);
     }
@@ -45,5 +50,10 @@ public class CollectionServiceImpl implements CollectionService {
     @Override
     public void removeById(Integer id) {
         collectionDao.deleteById(id);
+    }
+
+    @Override
+    public void removeByTravelId(Collections collections) {
+        collectionDao.deleteByTravelId(collections);
     }
 }

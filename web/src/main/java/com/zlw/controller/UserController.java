@@ -2,6 +2,7 @@ package com.zlw.controller;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.zlw.bean.Collections;
 import com.zlw.bean.Order;
 import com.zlw.bean.Travel;
 import com.zlw.bean.User;
@@ -13,8 +14,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.Map;
+import java.util.Objects;
 
 @Controller
 @RequestMapping("/user/")
@@ -44,7 +47,9 @@ public class UserController {
     public String adminIndex(Map<String,Object> map, @RequestParam(required = false) Integer pageNum){
         Integer index = Utils.pageUtil(pageNum);
         PageHelper.startPage(index,8);
-        map.put("travels",travelService.getList());
+        PageInfo pageInfo = PageInfo.of(travelService.getList());
+        map.put("pageInfo",pageInfo);
+        map.put("catalogs",catalogService.getAll());
         return "qiantai/index";
     }
 
@@ -64,11 +69,14 @@ public class UserController {
     }
     //支付成功
     @RequestMapping("play-order")
-    @ResponseBody
-    public void playOrder(Map<String,Object> map,@RequestParam(required = false) Integer id){
+    public String playOrder(Map<String,Object> map,@RequestParam(required = false) Integer id,@RequestParam(required = false)Integer pageNum){
+        if (null==pageNum||0==pageNum){
+            pageNum=1;
+        }
         Order order = orderService.getById(id);
         order.setIsPlay(1);
         orderService.edit(order);
+        return "redirect:order-list?pageNum="+pageNum;
     }
 
     /**
@@ -79,12 +87,50 @@ public class UserController {
     @RequestMapping("collection-list")
     public String collection(Map<String,Object> map, @RequestParam(required = false) Integer pageNum, HttpSession session){
         PageHelper.startPage(Utils.pageUtil(pageNum),5);
-        User user = (User) session.getAttribute("user");
+        User user = (User) session.getAttribute("session_user");
         System.out.println(user.getU_id());
         PageInfo pageInfo = PageInfo.of(collectionService.getAllByUser(user.getU_id()));
         map.put("pageInfo",pageInfo);
         return "qiantai/collection_list";
     }
+
+    @RequestMapping("collection-remove")
+    public String collectionRemove(Map<String,Object> map, HttpServletRequest request){
+        String[] ids = request.getParameterValues("id");
+        if(Objects.equals(ids.length,0)){
+            map.put("msg","请勾选要删除的商品");
+            return "forward:collection-list";
+        }
+        for (String string: ids) {
+            collectionService.removeById(Integer.parseInt(string));
+        }
+        return "redirect:collection-list";
+    }
+
+    @RequestMapping("collection_remove")
+    public String collectionRemove(Map<String,Object> map,@RequestParam(required = false) Integer id,HttpSession session,@RequestParam(required = false) Integer number){
+        Collections collections = new Collections();
+        collections.setTravelId(id);
+        User user = (User) session.getAttribute("session_user");
+        collections.setUserId(user.getU_id());
+        collectionService.removeByTravelId(collections);
+        if (null!=number){
+            return "redirect:collection-list";
+        }
+        return "redirect:/travel-detail?id="+id;
+    }
+
+    @RequestMapping("collection-add")
+    public String collectionAdd(Map<String,Object> map,HttpSession session,@RequestParam(required = false)Integer id){
+        Collections collections = new Collections();
+        collections.setTravelId(id);
+        User user = (User) session.getAttribute("session_user");
+        collections.setUserId(user.getU_id());
+        collectionService.addOne(collections);
+        System.out.println("收藏成功"+id+"="+user.getU_id());
+        return "redirect:/travel-detail?id="+id;
+    }
+
 
 
     /**
@@ -135,5 +181,37 @@ public class UserController {
         map.put("travel",travel);
         map.put("catalogs",catalogService.getAll());
         return "qiantai/collection_deatil";
+    }
+
+    /**
+     * 购买
+     * @param map
+     * @param number
+     * @param session
+     * @return
+     */
+    @RequestMapping("travel-buy")
+    public String travelBuy(Map<String,Object> map,@RequestParam(required = false)Integer number, Order order,HttpSession session){
+        User user = (User) session.getAttribute("session_user");
+        order.setUserId(user.getU_id());
+        System.out.println(order.toString());
+        orderService.addOne(order);
+        if (null!=number&&number==1){
+            return "redirect:collection-list";
+        }
+        return "redirect:/user/index";
+    }
+
+    /**
+     * 跳转订单页
+     * @param map
+     * @param id
+     * @return
+     */
+    @RequestMapping("to-travel-buy")
+    public String toTravelnBuy(Map<String,Object> map,@RequestParam(required = false)Integer id){
+        map.put("travel",travelService.getById(id));
+        map.put("time",System.currentTimeMillis());
+        return "qiantai/travel-buy";
     }
 }

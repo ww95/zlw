@@ -23,7 +23,9 @@
                                <td>${collection.travel.price}</td>
                                <td>${collection.travel.discount}</td>
                                <td>
+                                   <a href="<%=request.getContextPath()%>/user/travel-buy?id=${collection.travel.id}">预订</a>
                                    <a href="<%=request.getContextPath()%>/user/collection-detail?id=${collection.travel.id}">查看</a>
+                                   <a href="<%=request.getContextPath()%>/user/collection_remove?id=${collection.travel.id}&number=1">删除</a>
                                </td>
                            </tr>
                        </c:forEach>

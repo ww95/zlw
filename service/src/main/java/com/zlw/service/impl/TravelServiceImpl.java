@@ -28,6 +28,16 @@ public class TravelServiceImpl implements TravelService {
     }
 
     @Override
+    public List<Travel> getListByCatalog(Integer id) {
+        return travelDao.selectAllByCatalog(id);
+    }
+
+    @Override
+    public List<Travel> getBySearch(String string) {
+        return travelDao.selectBySearch(string);
+    }
+
+    @Override
     public Travel getById(Integer id) {
         return travelDao.selectById(id);
     }

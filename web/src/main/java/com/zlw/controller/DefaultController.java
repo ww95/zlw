@@ -3,11 +3,8 @@ package com.zlw.controller;
 import com.alibaba.fastjson.JSON;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.zlw.bean.Page;
-import com.zlw.bean.Travel;
-import com.zlw.bean.User;
-import com.zlw.service.TravelService;
-import com.zlw.service.UserService;
+import com.zlw.bean.*;
+import com.zlw.service.*;
 import com.zlw.util.UserUtil;
 import com.zlw.util.Utils;
 import org.springframework.stereotype.Controller;
@@ -17,6 +14,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
@@ -28,6 +26,15 @@ public class DefaultController {
 
     @Resource(name = "travelService")
     private TravelService travelService;
+
+    @Resource(name = "orderService")
+    private OrderService orderService;
+
+    @Resource(name = "collectionService")
+    private CollectionService collectionService;
+
+    @Resource(name = "catalogService")
+    private CatalogService catalogService;
     
     @RequestMapping(value = "/index")
     public String index(Map<String,Object> map,@RequestParam(required = false) Integer pageNum){
@@ -35,6 +42,7 @@ public class DefaultController {
         PageHelper.startPage(index,8);
         PageInfo pageInfo = PageInfo.of(travelService.getList());
         map.put("pageInfo",pageInfo);
+        map.put("catalogs",catalogService.getAll());
         return "qiantai/index";
     }
 
@@ -77,28 +85,46 @@ public class DefaultController {
      */
     @RequestMapping("/login")
     public String login(Map<String,Object> map, User user, HttpServletRequest request){
-        System.out.println(user.toString());
         User u = userService.getUserByUserName(user.getUsername());
         //判断用户是否存在
         if (UserUtil.getInstance().isTrue(u)){
+            System.out.println("用户还未注册");
             map.put("msg","该用户未注册，请注册后登陆！！！");
             return "forward:/index";
         }
         /**
          * 判断密码是否正确
          */
-        if(!user.getPassword().equals(u.getPassword())){
+        if(!Objects.equals(u.getPassword(),user.getPassword())){
+            System.out.println("输入密码不正确");
             map.put("msg","密码输入错误，请重新输入！！！");
             return "forward:/index";
         }
-        request.getSession().setAttribute("user",u);
-        return "redirect:/user/index";
+        request.getSession().setAttribute("session_user",u);
+        System.out.println("恭喜用户正确");
+        return "redirect:user/index";
     }
+
+    /**
+     * 详情页
+     * @param map
+     * @param id
+     * @return
+     */
     @RequestMapping("/travel-detail")
-    public void travelDetail(Map<String,Object> map, @RequestParam(required = false) Integer id){
+    public String travelDetail(Map<String,Object> map, @RequestParam(required = false) Integer id,HttpSession session){
         Travel travel = travelService.getById(id);
         System.out.println(travel.toString());
-//        return "forward:/index";
+        User user = (User) session.getAttribute("session_user");
+        if (user!=null){
+            Collections collections = new Collections();
+            collections.setTravelId(id);
+            collections.setUserId(user.getU_id());
+            Collections c = collectionService.getByTravel(collections);
+            map.put("collections",c);
+        }
+        map.put("travel",travel);
+        return "qiantai/travel-detail";
     }
 
     @RequestMapping("/ajax")
@@ -112,6 +138,33 @@ public class DefaultController {
         page.setPageNum(pageNum);
         page.setPages(pageInfo.getPages());
         page.setTravelList(pageInfo.getList());
+        return JSON.toJSONString(page);
+    }
+
+    @RequestMapping("/search")
+    @ResponseBody
+    public String search(Map<String,Object> map,@RequestParam Integer id,@RequestParam(required = false) Integer pageNum){
+        PageHelper.startPage(Utils.pageUtil(pageNum),8);
+        PageInfo pageInfo = PageInfo.of(travelService.getListByCatalog(id));
+        Page page = new Page();
+        page.setPageNum(1);
+        page.setPages(pageInfo.getPages());
+        page.setTravelList(pageInfo.getList());
+        page.setId(id);
+        return JSON.toJSONString(page);
+    }
+
+    @RequestMapping("/searchByString")
+    @ResponseBody
+    public String searchByString(@RequestParam String search,@RequestParam(required = false) Integer pageNum){
+        System.out.println(search);
+        PageHelper.startPage(Utils.pageUtil(pageNum),8);
+        PageInfo pageInfo = PageInfo.of(travelService.getBySearch(search));
+        Page page = new Page();
+        page.setPageNum(1);
+        page.setPages(pageInfo.getPages());
+        page.setTravelList(pageInfo.getList());
+        page.setString(search);
         return JSON.toJSONString(page);
     }
 }

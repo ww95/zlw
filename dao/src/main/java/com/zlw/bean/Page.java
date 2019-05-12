@@ -9,4 +9,6 @@ public class Page {
     private Integer pageNum;
     private Integer pages;
     private List<Travel> travelList;
+    private Integer id;
+    private String string;
 }

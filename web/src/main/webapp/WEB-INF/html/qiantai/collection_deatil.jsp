@@ -50,7 +50,7 @@
         <label for="exampleInputEmail1">详细信息</label>
         <input type="text" class="form-control" name="content" value="${travel.content}" id="exampleInputEmail8" aria-describedby="emailHelp">
     </div>
-    <button type="button" class="btn btn-primary" onclick="javascript:window.location.href='${pageContext.request.contextPath}/backstage/admin/travel-list';">确认</button>
+    <button type="button" class="btn btn-primary" onclick="javascript:window.location.href='${pageContext.request.contextPath}/user/collection-list';">确认</button>
 </div>
 <jsp:include page="bottom.jsp"></jsp:include>
 <script>

@@ -10,6 +10,8 @@ public interface TravelDao {
     void insertList(List<Travel> list);
     void insertOne(Travel travel);
     List<Travel> selectAll();
+    List<Travel> selectAllByCatalog(Integer id);
+    List<Travel> selectBySearch(String String);
     Travel selectById(Integer id);
     void update(Travel travel);
     void deleteById(Integer id);

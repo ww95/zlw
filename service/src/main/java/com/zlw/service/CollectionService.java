@@ -10,6 +10,8 @@ public interface CollectionService {
     List<Collections> getAll();
     List<Collections> getAllByUser(Integer id);
     Collections getById(Integer id);
+    Collections getByTravel(Collections collections);
     void edit(Collections collection);
     void removeById(Integer id);
+    void removeByTravelId(Collections collections);
 }

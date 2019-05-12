@@ -23,7 +23,7 @@
                                 <td>${order.totalChildrenNumber}</td>
                                 <td>${order.totalPrices}</td>
                                 <c:if test="${order.isPlay==0}">
-                                    <td>支付失败，请重新<a href="<%=request.getContextPath()%>/user/play-order?id=${order.id}">支付</a></td>
+                                    <td>支付失败，请重新<a href="<%=request.getContextPath()%>/user/play-order?id=${order.id}&pageNum=${pageInfo.pageNum}">支付</a></td>
                                 </c:if>
                                 <c:if test="${order.isPlay==1}">
                                     <td>支付成功</td>

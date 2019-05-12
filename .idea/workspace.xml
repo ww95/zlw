@@ -7,14 +7,55 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e55666cd-205d-45ee-96ae-00042f791d93" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/zlw.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/travel-buy.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/travel-detail.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e7aa027f-7b5a-4850-89c7-11967e64c607.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e7aa027f-7b5a-4850-89c7-11967e64c607.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/META-INF/web.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/zlw/bean/Catalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/zlw/bean/Catalog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/zlw/bean/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/zlw/bean/Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/zlw/dao/CollectionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/zlw/dao/CollectionDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/zlw/dao/TravelDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/zlw/dao/TravelDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/resources/com/zlw/dao/CollectionDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/resources/com/zlw/dao/CollectionDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/resources/com/zlw/dao/OrderDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/resources/com/zlw/dao/OrderDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/resources/com/zlw/dao/TravelDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/resources/com/zlw/dao/TravelDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/zlw/dao/CollectionDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/com/zlw/dao/CollectionDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/zlw/dao/CollectionDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/com/zlw/dao/CollectionDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/zlw/service/CollectionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/zlw/service/CollectionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/zlw/service/TravelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/zlw/service/TravelService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/zlw/service/impl/CollectionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/zlw/service/impl/CollectionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/zlw/service/impl/TravelServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/zlw/service/impl/TravelServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/com/zlw/service/CollectionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/com/zlw/service/CollectionService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/com/zlw/service/impl/CollectionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/com/zlw/service/impl/CollectionServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/zlw/controller/DefaultController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/zlw/controller/DefaultController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/zlw/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/zlw/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/zlw/controller/back/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/zlw/controller/back/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/zlw/global/UserFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/zlw/global/UserFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/collection_deatil.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/collection_deatil.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/collection_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/collection_list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/info-update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/info-update.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/order_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/order_list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/password-update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/password-update.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/top.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/top.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/test/java/com/test/web/TravelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/test/java/com/test/web/TravelTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/com/zlw/controller/DefaultController.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/com/zlw/controller/DefaultController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/com/zlw/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/com/zlw/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/com/zlw/global/UserFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/com/zlw/global/UserFilter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/target/web.war" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/META-INF/web.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/zlw/controller/DefaultController.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/zlw/controller/DefaultController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/zlw/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/zlw/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/zlw/global/UserFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/zlw/global/UserFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/html/qiantai/collection_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/html/qiantai/collection_list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/html/qiantai/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/html/qiantai/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/html/qiantai/info-update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/html/qiantai/info-update.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/html/qiantai/password-update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/html/qiantai/password-update.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/dao-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/dao-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/service-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zlw.iml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -47,10 +88,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/java/com/zlw/controller/UserController.java">
+        <entry file="file://$PROJECT_DIR$/web/src/main/java/com/zlw/controller/DefaultController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2530">
-              <caret line="135" column="52" selection-start-line="135" selection-start-column="52" selection-end-line="135" selection-end-column="52" />
+            <state relative-caret-position="95">
+              <caret line="158" column="108" selection-start-line="158" selection-start-column="108" selection-end-line="158" selection-end-column="108" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/zlw/bean/Page.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="12" column="25" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -59,31 +109,88 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/index.jsp">
+        <entry file="file://$PROJECT_DIR$/web/src/main/java/com/zlw/util/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1408">
-              <caret line="64" column="33" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
+            <state relative-caret-position="154">
+              <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/main/java/com/zlw/util/UserUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/top.jsp">
+        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="258" column="53" selection-start-line="258" selection-start-column="53" selection-end-line="258" selection-end-column="53" />
+            <state relative-caret-position="218">
+              <caret line="273" column="198" selection-start-line="273" selection-start-column="198" selection-end-line="273" selection-end-column="198" />
+              <folding>
+                <element signature="e#12250#12930#0#HTML" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/java/com/zlw/controller/back/AdminController.java">
+        <entry file="file://$PROJECT_DIR$/web/src/test/java/com/test/web/TravelTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4378">
-              <caret line="232" column="52" selection-start-line="232" selection-start-column="7" selection-end-line="232" selection-end-column="52" />
+            <state relative-caret-position="1584">
+              <caret line="87" column="1" lean-forward="true" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#2451#2452#0" expanded="true" />
+                <element signature="e#2510#2511#0" expanded="true" />
+                <element signature="e#2578#2579#0" expanded="true" />
+                <element signature="e#2647#2648#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dao/src/main/resources/com/zlw/dao/TravelDao.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="124">
+              <caret line="38" column="30" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/zlw/dao/TravelDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="13" column="31" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service/src/main/java/com/zlw/service/impl/TravelServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="36" column="46" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
+              <folding>
+                <element signature="e#757#758#0" expanded="true" />
+                <element signature="e#784#785#0" expanded="true" />
+                <element signature="e#880#881#0" expanded="true" />
+                <element signature="e#907#908#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service/src/main/java/com/zlw/service/TravelService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -101,36 +208,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>id</find>
-      <find>travel-list</find>
-      <find>to-travel-edit</find>
-      <find>travel-detail</find>
-      <find>travel</find>
-      <find>edit</find>
-      <find>travel-edit</find>
-      <find>inde</find>
-      <find>to-travel-add</find>
-      <find>travelBuilder</find>
-      <find>travel-add</find>
-      <find>register</find>
-      <find>gallery</find>
-      <find>Portfolio</find>
-      <find>Welcome to Trendy Travel</find>
-      <find>username</find>
-      <find>selectByUserName</find>
-      <find>middle-w3l</find>
-      <find>page-item</find>
-      <find>col-md-3 col-sm-3 col-xs-6 w3gallery-grids</find>
-      <find>col-md-3</find>
-      <find>pagination</find>
-      <find>index</find>
-      <find>play-order</find>
-      <find>travel-de</find>
-      <find>order-list</find>
-      <find>collection-list</find>
-      <find>collectionList</find>
+      <find>to-update-info</find>
       <find>to-uodate-pwd</find>
-      <find>collection-detail</find>
+      <find>collection</find>
+      <find>travel-detail</find>
+      <find>collection-add</find>
+      <find>selectByTravel</find>
+      <find>deleteById</find>
+      <find>to-travel-buy</find>
+      <find>comments</find>
+      <find>addOne</find>
+      <find>travel-buy</find>
+      <find>play-order</find>
+      <find>1</find>
+      <find>to-collection-buy</find>
+      <find>insertOne</find>
+      <find>collection-list</find>
+      <find>selectAllByUser</find>
+      <find>collection-remove</find>
+      <find>collection_remove</find>
+      <find>log</find>
+      <find>gallery</find>
+      <find>index</find>
+      <find>sreach</find>
+      <find>selectAll</find>
+      <find>page-item</find>
+      <find>page-item2</find>
+      <find>pagination2</find>
+      <find>alert</find>
+      <find>searchByString`</find>
+      <find>search</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -140,18 +247,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/houtai/Wopop.html" />
-        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/houtai/login.jsp" />
-        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/houtai/index.jsp" />
-        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/houtai/info-update.jsp" />
-        <option value="$PROJECT_DIR$/web/src/main/java/com/zlw/global/AdminFilter.java" />
-        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/houtai/password-update.jsp" />
-        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/houtai/catalog_add.jsp" />
-        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/houtai/catalog_list.jsp" />
         <option value="$PROJECT_DIR$/dao/src/main/java/com/zlw/bean/Travel.java" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/houtai/travel_detail.jsp" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/houtai/travel_edit.jsp" />
-        <option value="$PROJECT_DIR$/dao/src/main/resources/com/zlw/dao/TravelDao.xml" />
         <option value="$PROJECT_DIR$/dao/src/main/java/com/zlw/bean/Order.java" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/houtai/travel_list.jsp" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/houtai/order_list.jsp" />
@@ -162,35 +260,44 @@
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/houtai/travel_add.jsp" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/houtai/catalog_edit.jsp" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/zlw/global/TravelUtil.java" />
-        <option value="$PROJECT_DIR$/web/src/main/java/com/zlw/controller/back/AdminController.java" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/index.html" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/zlw/controller/AdminController.java" />
-        <option value="$PROJECT_DIR$/web/src/main/java/com/zlw/global/UserFilter.java" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/sop.jsp" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/buttom.jsp" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/zlw/util/IndexUtil.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/zlw/util/Utils.java" />
-        <option value="$PROJECT_DIR$/web/pom.xml" />
-        <option value="$PROJECT_DIR$/dao/src/main/java/com/zlw/bean/Page.java" />
-        <option value="$PROJECT_DIR$/web/src/main/java/com/zlw/controller/DefaultController.java" />
         <option value="$PROJECT_DIR$/web/src/main/resources/spring-web.xml" />
-        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/travel-detail.jsp" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/self-index.jsp" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/travel_detail.jsp" />
-        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/info-update.jsp" />
-        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/order_list.jsp" />
-        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/index.jsp" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/e7aa027f-7b5a-4850-89c7-11967e64c607/console.sql" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/detail.jsp" />
+        <option value="$PROJECT_DIR$/web/pom.xml" />
+        <option value="$PROJECT_DIR$/web/src/main/java/com/zlw/global/UserFilter.java" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/password-update.jsp" />
-        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/top.jsp" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/info-update.jsp" />
         <option value="$PROJECT_DIR$/dao/src/main/java/com/zlw/dao/CollectionDao.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/com/zlw/service/CollectionService.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/com/zlw/service/impl/CollectionServiceImpl.java" />
         <option value="$PROJECT_DIR$/dao/src/main/resources/com/zlw/dao/CollectionDao.xml" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/e7aa027f-7b5a-4850-89c7-11967e64c607/console.sql" />
-        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/collection_list.jsp" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/travel-detail.jsp" />
+        <option value="$PROJECT_DIR$/dao/src/main/resources/com/zlw/dao/OrderDao.xml" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/travel-buy.jsp" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/order_list.jsp" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/collection_deatil.jsp" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/collection_list.jsp" />
+        <option value="$PROJECT_DIR$/web/src/main/java/com/zlw/controller/back/AdminController.java" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/top.jsp" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/zlw/bean/Catalog.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/zlw/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/zlw/dao/TravelDao.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/zlw/service/TravelService.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/zlw/service/impl/TravelServiceImpl.java" />
+        <option value="$PROJECT_DIR$/web/src/test/java/com/test/web/TravelTest.java" />
+        <option value="$PROJECT_DIR$/dao/src/main/resources/com/zlw/dao/TravelDao.xml" />
+        <option value="$PROJECT_DIR$/dao/src/main/java/com/zlw/bean/Page.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/com/zlw/controller/DefaultController.java" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/index.jsp" />
       </list>
     </option>
   </component>
@@ -224,48 +331,26 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="dao" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="dao" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="service" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="service" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="web Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="web Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="zlw" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="zlw" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="zlw" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
         </path>
       </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1386" />
+    <option name="x" value="354" />
+    <option name="y" value="8" />
+    <option name="width" value="932" />
     <option name="height" value="788" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -277,7 +362,190 @@
     <panes>
       <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zlw" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zlw" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zlw" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zlw" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zlw" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zlw" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zlw" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zlw" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zlw" type="462c0819:PsiDirectoryNode" />
+              <item name="bean" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zlw" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zlw" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zlw" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zlw" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zlw" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zlw" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zlw" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zlw" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zlw" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zlw" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zlw" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zlw" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zlw" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zlw" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zlw" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zlw" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zlw" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zlw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zlw" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+              <item name="qiantai" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -290,14 +558,19 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\IntelliJ IDEA java\zlw\web\src\main\webapp\iframe" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\git\zlw\web\src\main\webapp\WEB-INF\html\qiantai" />
+      <recent name="E:\IntelliJ IDEA java\zlw\web\src\main\webapp\WEB-INF\html\qiantai" />
+      <recent name="E:\IntelliJ IDEA java\zlw\web\src\main\webapp" />
+      <recent name="E:\IntelliJ IDEA java\zlw\web\src\main\webapp\WEB-INF\html\houtai" />
+      <recent name="E:\IntelliJ IDEA java\zlw\dao\src\main\resources\com\zlw\dao" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.zlw.global" />
@@ -305,12 +578,8 @@
       <recent name="com.zlw.service.impl" />
       <recent name="com.zlw.service" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\IntelliJ IDEA java\zlw\web\src\main\webapp\WEB-INF\html\qiantai" />
-      <recent name="E:\IntelliJ IDEA java\zlw\web\src\main\webapp" />
-      <recent name="E:\IntelliJ IDEA java\zlw\web\src\main\webapp\WEB-INF\html\houtai" />
-      <recent name="E:\IntelliJ IDEA java\zlw\dao\src\main\resources\com\zlw\dao" />
-      <recent name="E:\IntelliJ IDEA java\zlw\web\src\test" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\IntelliJ IDEA java\zlw\web\src\main\webapp\iframe" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -325,7 +594,39 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Tomcat Server.zlw">
+    <configuration name="TravelTest.getTravelsByCatalog" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.test.web" />
+      <option name="MAIN_CLASS_NAME" value="com.test.web.TravelTest" />
+      <option name="METHOD_NAME" value="getTravelsByCatalog" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TravelTest.getTravelsBySearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.test.web" />
+      <option name="MAIN_CLASS_NAME" value="com.test.web.TravelTest" />
+      <option name="METHOD_NAME" value="getTravelsBySearch" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="zlw" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.39" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8888/zlw/index" />
       <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
@@ -400,6 +701,12 @@
         </option>
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TravelTest.getTravelsBySearch" />
+        <item itemvalue="JUnit.TravelTest.getTravelsByCatalog" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -443,6 +750,15 @@
       <workItem from="1557362474237" duration="10196000" />
       <workItem from="1557401956132" duration="377000" />
       <workItem from="1557456063187" duration="25000" />
+      <workItem from="1557460039209" duration="19000" />
+      <workItem from="1557460087292" duration="3374000" />
+      <workItem from="1557534050476" duration="201000" />
+      <workItem from="1557534263284" duration="324000" />
+      <workItem from="1557538256751" duration="3178000" />
+      <workItem from="1557554874365" duration="29000" />
+      <workItem from="1557557808729" duration="19000" />
+      <workItem from="1557579133416" duration="8107000" />
+      <workItem from="1557619859893" duration="18910000" />
     </task>
     <task id="LOCAL-00001" summary="毕业论文">
       <created>1557368908296</created>
@@ -462,18 +778,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="OrderTest_getAll - 2019.04.30 at 11h 26m 55s.xml">
-      <configuration name="OrderTest.getAll" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OrderTest_getAll - 2019.04.30 at 11h 27m 05s.xml">
-      <configuration name="OrderTest.getAll" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OrderTest_getOne - 2019.04.30 at 11h 27m 33s.xml">
-      <configuration name="OrderTest.getOne" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OrderTest_update - 2019.04.30 at 11h 27m 45s.xml">
-      <configuration name="OrderTest.update" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="OrderTest_update - 2019.04.30 at 11h 29m 15s.xml">
       <configuration name="OrderTest.update" configurationId="JUnit" />
     </history-entry>
@@ -492,14 +796,26 @@
     <history-entry file="UserTest_getUserByUsername - 2019.05.05 at 14h 23m 45s.xml">
       <configuration name="UserTest.getUserByUsername" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TravelTest_getTravelsByCatalog - 2019.05.12 at 10h 30m 19s.xml">
+      <configuration name="TravelTest.getTravelsByCatalog" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TravelTest_getTravelsByCatalog - 2019.05.12 at 10h 32m 16s.xml">
+      <configuration name="TravelTest.getTravelsByCatalog" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TravelTest_getTravelsBySearch - 2019.05.12 at 10h 51m 21s.xml">
+      <configuration name="TravelTest.getTravelsBySearch" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TravelTest_getTravelsBySearch - 2019.05.12 at 10h 52m 30s.xml">
+      <configuration name="TravelTest.getTravelsBySearch" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92858000" />
+    <option name="totallyTimeSpent" value="127019000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2375189" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.22087745" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -509,21 +825,21 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32786885" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.43114755" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49848714" visible="true" weight="0.3327869" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.3289689" />
-      <window_info anchor="bottom" id="Spring" order="8" weight="0.3289689" />
-      <window_info anchor="bottom" id="Database Console" order="9" weight="0.39016393" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50075644" side_tool="true" weight="0.3289689" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.32786885" />
-      <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Console" order="8" weight="0.39016393" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5015129" side_tool="true" weight="0.43114755" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32786885" />
+      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Spring" order="14" weight="0.32786885" />
       <window_info anchor="bottom" id="Version Control" order="15" />
-      <window_info anchor="bottom" id="Java Enterprise" order="16" weight="0.3289689" />
+      <window_info anchor="bottom" id="Java Enterprise" order="16" weight="0.32733223" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -583,137 +899,11 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/houtai/catalog_edit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="91" selection-start-line="3" selection-start-column="91" selection-end-line="3" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/houtai/catalog_add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/houtai/travel_add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="60" selection-start-line="1" selection-start-column="60" selection-end-line="1" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/houtai/travel_edit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="69" selection-start-line="5" selection-start-column="69" selection-end-line="5" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/zlw/global/TravelUtil.java" />
-    <entry file="file://$PROJECT_DIR$/dao/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/resources/spring-dao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="814">
-          <caret line="37" column="38" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/resources/com/zlw/dao/CatalogDao.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/resources/com/zlw/dao/OrderDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="51" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/zlw/dao/TravelDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/houtai/bottom.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/js/easing.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/zlw/bean/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="11" column="27" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/zlw/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="36" column="23" lean-forward="true" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
-          <folding>
-            <element signature="e#671#672#0" expanded="true" />
-            <element signature="e#725#726#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/zlw/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="13" column="25" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/resources/com/zlw/dao/UserDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="72" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/buttom.jsp" />
     <entry file="file://$PROJECT_DIR$/web/src/main/java/com/zlw/util/IndexUtil.java" />
     <entry file="file://$PROJECT_DIR$/web/src/main/java/com/zlw/global/AdminFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-110">
           <caret line="10" column="22" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/zlw/util/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/zlw/bean/Travel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="23" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/zlw/bean/Page.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="10" column="35" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -734,20 +924,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1540">
-          <caret line="70" column="32" selection-start-line="70" selection-start-column="32" selection-end-line="70" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/zlw/global/UserFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/service/src/main/java/com/zlw/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -755,37 +931,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/travel-detail.jsp" />
     <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/bottom.jsp">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/self-index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/zlw/controller/DefaultController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="96" column="35" selection-start-line="96" selection-start-column="22" selection-end-line="96" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/info-update.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="116" selection-start-line="6" selection-start-column="92" selection-end-line="6" selection-end-column="116" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/order_list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/houtai/travel_list.jsp">
       <provider selected="true" editor-type-id="text-editor">
@@ -797,60 +944,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/zlw/bean/Collections.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="14" column="25" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/password-update.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="57" lean-forward="true" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/zlw/dao/CollectionDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/zlw/service/impl/CollectionServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="31" column="47" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
-          <folding>
-            <element signature="e#818#819#0" expanded="true" />
-            <element signature="e#845#846#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/zlw/service/CollectionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/resources/com/zlw/dao/CollectionDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="17" column="52" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e7aa027f-7b5a-4850-89c7-11967e64c607/console.sql" />
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/collection_list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="25" column="96" selection-start-line="25" selection-start-column="79" selection-end-line="25" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/collection_detail.jsp" />
     <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/houtai/travel_detail.jsp">
       <provider selected="true" editor-type-id="text-editor">
@@ -859,44 +952,313 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/collection_deatil.jsp">
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/zlw/bean/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="60" column="9" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
+        <state relative-caret-position="198">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/zlw/controller/UserController.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://D:/java/java8/jdk/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2530">
-          <caret line="135" column="52" selection-start-line="135" selection-start-column="52" selection-end-line="135" selection-end-column="52" />
+        <state relative-caret-position="193">
+          <caret line="975" column="19" selection-start-line="975" selection-start-column="19" selection-end-line="975" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/password-update.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="113" selection-start-line="6" selection-start-column="101" selection-end-line="6" selection-end-column="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/info-update.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="113" selection-start-line="6" selection-start-column="113" selection-end-line="6" selection-end-column="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/zlw/global/EnCodingFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/houtai/top.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/houtai/index.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e7aa027f-7b5a-4850-89c7-11967e64c607/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/zlw/service/impl/CatalogServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/zlw/bean/Travel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/zlw/bean/Collections.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" lean-forward="true" selection-start-column="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/zlw/bean/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="39" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="102" column="42" selection-start-line="102" selection-start-column="42" selection-end-line="102" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/travel-detail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1019">
+          <caret line="15" column="14" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="15" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/zlw/global/UserFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="20" column="66" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/zlw/service/impl/CollectionServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#818#819#0" expanded="true" />
+            <element signature="e#874#875#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/index.jsp">
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/zlw/service/OrderService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1408">
-          <caret line="64" column="33" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
+        <state relative-caret-position="115">
+          <caret line="9" column="15" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/zlw/service/impl/OrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="25" column="26" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/travel-buy.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="61" column="37" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/order_list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="807">
+          <caret line="44" column="26" lean-forward="true" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/collection_deatil.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="52" column="147" selection-start-line="52" selection-start-column="147" selection-end-line="52" selection-end-column="147" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/self-index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5661">
+          <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/zlw/dao/CollectionDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/resources/com/zlw/dao/OrderDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="52" column="13" lean-forward="true" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/resources/com/zlw/dao/CollectionDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="17" column="52" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/zlw/service/CollectionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/java/com/zlw/controller/back/AdminController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4378">
-          <caret line="232" column="52" selection-start-line="232" selection-start-column="7" selection-end-line="232" selection-end-column="52" />
+        <state relative-caret-position="295">
+          <caret line="307" column="35" selection-start-line="307" selection-start-column="29" selection-end-line="307" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/collection_list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="27" column="132" selection-start-line="27" selection-start-column="132" selection-end-line="27" selection-end-column="132" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/top.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="258" column="53" selection-start-line="258" selection-start-column="53" selection-end-line="258" selection-end-column="53" />
+        <state relative-caret-position="203">
+          <caret line="235" column="112" lean-forward="true" selection-start-line="235" selection-start-column="112" selection-end-line="235" selection-end-column="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/zlw/bean/Catalog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/zlw/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="24" column="30" lean-forward="true" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/zlw/service/TravelService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/zlw/service/impl/TravelServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="36" column="46" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
+          <folding>
+            <element signature="e#757#758#0" expanded="true" />
+            <element signature="e#784#785#0" expanded="true" />
+            <element signature="e#880#881#0" expanded="true" />
+            <element signature="e#907#908#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/zlw/dao/TravelDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="13" column="31" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/test/java/com/test/web/TravelTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1584">
+          <caret line="87" column="1" lean-forward="true" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
+          <folding>
+            <element signature="e#2451#2452#0" expanded="true" />
+            <element signature="e#2510#2511#0" expanded="true" />
+            <element signature="e#2578#2579#0" expanded="true" />
+            <element signature="e#2647#2648#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/resources/com/zlw/dao/TravelDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="38" column="30" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/zlw/util/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/zlw/util/UserUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/zlw/bean/Page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/zlw/controller/DefaultController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="158" column="108" selection-start-line="158" selection-start-column="108" selection-end-line="158" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/html/qiantai/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="273" column="198" selection-start-line="273" selection-start-column="198" selection-end-line="273" selection-end-column="198" />
+          <folding>
+            <element signature="e#12250#12930#0#HTML" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -956,7 +1318,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
