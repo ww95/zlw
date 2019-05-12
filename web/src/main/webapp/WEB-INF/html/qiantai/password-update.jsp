@@ -7,6 +7,10 @@
             <input type="text" class="form-control" name="username" id="exampleInputEmail1" value="${session_user.username}" aria-describedby="emailHelp" readonly="readonly">
         </div>
         <div class="form-group">
+            <label for="oldPwd">原密码</label>
+            <input type="password" name="oldPwd" class="form-control" id="oldPwd">
+        </div>
+        <div class="form-group">
             <label for="exampleInputPassword2">密码</label>
             <input type="password" name="password" class="form-control" id="exampleInputPassword2">
         </div>

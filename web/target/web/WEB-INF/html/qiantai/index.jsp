@@ -1,5 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -61,7 +62,7 @@
 										<li><a href="#testi" class="scroll">注册</a></li>
 									</ul>
 								</li>
-								<li><a href="#team" class="scroll">收藏中心</a></li>
+<%--								<li><a href="#team" class="scroll">收藏中心</a></li>--%>
 							</ul>
 						</c:if>
 						<c:if test="${session_user!=null&&session_user.u_id!=null}">
@@ -70,7 +71,7 @@
 								<li><a href="<%=request.getContextPath()%>/user/order-list" class="active">个人中心</a></li>
 								<li><a href="#gallery" class="scroll">旅游列表</a></li>
 								<li><a href="#" class="scroll">${session_user.username}</a></li>
-								<li><a href="<%=request.getContextPath()%>/user/collection-list" class="active">收藏中心</a></li>
+								<li><a href="<%=request.getContextPath()%>/user/logout" class="active">注销</a></li>
 							</ul>
 						</c:if>
 					</div>
@@ -145,70 +146,25 @@
 		<div class="about-right-w3-agileits">
 			<div class="callbacks_container">
 				<ul class="rslides" id="slider3">
+					<c:forEach items="${hots}" var="travel">
 					<li>
-						<div class="col-md-6 about-left-w3-agileits">
+						<div style="height: 380px;" class="col-md-6 about-left-w3-agileits">
 							<h6>Welcome to Trendy Travel</h6>
-							<h3>Book your Dream Place</h3>
-							<p class="para-w3-agile">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed sollicitudin ante. Nullam condimentum mollis odio,
-								sed aliquet dolor consectetur.</p>
+							<h3>${travel.title}</h3>
+							<p class="para-w3-agile">${travel.info}</p>
 							<div class="w3l-book">
-								<h5>Prices Start at</h5>
-								<h6><span>$</span> 786</h6>
+								<h5>${travel.destination}</h5>
+								<h6><span>$</span>${travel.price*travel.discount}</h6>
 							</div>
 						</div>
 						<div class="col-md-6 banner-text1">
-							<img src="<%=request.getContextPath()%>/images/slider1.jpg" alt=" ">
+                            <a href="<%=request.getContextPath()%>/travel-detail?id=${travel.id}">
+                                <img style="height: 380px;width: 100%" src="<%=request.getContextPath()%>${travel.imgPath}" alt=" ">
+                            </a>
 						</div>
 						<div class="clearfix"> </div>
 					</li>
-					<li>
-						<div class="col-md-6 about-left-w3-agileits">
-							<h6>Welcome to Trendy Travel</h6>
-							<h3>Book Buguon Beach</h3>
-							<p class="para-w3-agile">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed sollicitudin ante. Nullam condimentum mollis odio,
-								sed aliquet dolor consectetur.</p>
-							<div class="w3l-book">
-								<h5>Prices Start at</h5>
-								<h6><span>$</span> 11024</h6>
-							</div>
-						</div>
-						<div class="col-md-6 banner-text1">
-							<img src="<%=request.getContextPath()%>/images/slider2.jpg" alt=" ">
-						</div>
-						<div class="clearfix"> </div>
-					</li>
-					<li>
-						<div class="col-md-6 about-left-w3-agileits">
-							<h6>Welcome to Trendy Travel</h6>
-							<h3>Fern Hills River</h3>
-							<p class="para-w3-agile">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed sollicitudin ante. Nullam condimentum mollis odio,
-								sed aliquet dolor consectetur.</p>
-							<div class="w3l-book">
-								<h5>Prices Start at</h5>
-								<h6><span>$</span> 6782</h6>
-							</div>
-						</div>
-						<div class="col-md-6 banner-text1">
-							<img src="<%=request.getContextPath()%>/images/slider3.jpg" alt=" ">
-						</div>
-						<div class="clearfix"> </div>
-					</li>
-					<li>
-						<div class="col-md-6 about-left-w3-agileits">
-							<h6>Welcome to Trendy Travel</h6>
-							<h3>Aenean in egestas</h3>
-							<p class="para-w3-agile">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed sollicitudin ante. Nullam condimentum mollis odio,
-								sed aliquet dolor consectetur.</p>
-							<div class="w3l-book">
-								<h5>Prices Start at</h5>
-								<h6><span>$</span> 7548</h6>
-							</div>
-						</div>
-						<div class="col-md-6 banner-text1">
-							<img src="<%=request.getContextPath()%>/images/slider4.jpg" alt=" ">
-						</div>
-						<div class="clearfix"> </div>
-					</li>
+					</c:forEach>
 				</ul>
 			</div>
 		</div>
@@ -221,70 +177,70 @@
 <div id="gallery" class="gallery">
 	<div class="container">
 		<h3 class="title-w3-agile">Portfolio
-			<div>
 
-					<div class="form-group">
-						<input type="text" class="form-control" id="search" aria-describedby="emailHelp" placeholder="Enter email">
-					</div>
-					<button type="button" onclick="searchTravels(document.getElementById('search').value,1)" class="btn btn-primary">search</button>
-				<script>
-					function searchTravels(searchValue,page) {
-						alert(searchValue)
-						$.ajax(
-								{
-									url :"<%=request.getContextPath()%>/searchByString",
-									type :"post",
-									data :{
-										"search":searchValue,
-										"pageNum":page
-									},
-									dataType:"json",
-									success : function (result) {
-										alert("Ajax访问成功")
-										var list = result.travelList;
-										var travelId = result.id;
-										if ($("#div").length>0){
-											$(".col-md-3").remove();
-										}
-										//添加数据
-										for (var i = 0; i < list.length; i++) {
-											$("#div").append("" +
-													"<div class=\"col-md-3 col-sm-3 col-xs-6 w3gallery-grids\">\n" +
-													"\t\t\t\t<a href=\"<%=request.getContextPath()%>/travel-detail?id="+list[i].id+"\" class=\"imghvr-hinge-right figure\">\n" +
-													"\t\t\t\t\t<img src=\"<%=request.getContextPath()%>/images/g1.jpg\" alt=\"\" title=\"Trendy Travel Image\"/>\n" +
-													"\t\t\t\t\t<div class=\"agile-figcaption\">\n" +
-													"\t\t\t\t\t\t<h4>"+list[i].title+"</h4>\n" +
-													"\t\t\t\t\t\t<p>"+list[i].info+"</p>\n" +
-													"\t\t\t\t\t</div>\n" +
-													"\t\t\t\t</a>\n" +
-													"\t\t\t</div>" +
-													"");
-										}
-										//对于下标
-										if ($(".page-item").length>0) {
-											$(".page-item").remove();
-										}
-										var string = result.string+"";
-										$("#pagination").append('<li class="page-item"><a class="page-link" href="javascript:;" onclick="searchTravels(\''+document.getElementById('search').value+'\',1)">首页</a></li>');
-										$("#pagination").append('<li class="page-item"><a class="page-link" href="javascript:;" onclick="searchTravels(\''+document.getElementById('search').value+'\','+(result.pageNum-1)+')">上一页</a></li>');
-										for (var i = 1; i <=result.pages; i++) {
-											$("#pagination").append('<li class="page-item"><a class="page-link" href="javascript:;" onclick="searchTravels(\''+document.getElementById('search').value+'\','+i+')">'+i+'</a></li>');
-										}
-										$("#pagination").append('<li class="page-item"><a class="page-link" href="javascript:;" onclick="searchTravels(\''+document.getElementById('search').value+'\','+(result.pageNum+1)+')">下一页</a></li>');
-										$("#pagination").append('<li class="page-item"><a class="page-link" href="javascript:;" onclick="searchTravels(\''+document.getElementById('search').value+'\','+result.pages+')">尾页</a></li>');
-									}
-								}
-						)
-					}
-				</script>
-			</div>
 		</h3>
 
+		<div>
+			<div class="form-group">
+				<input type="text"  id="search" style="width: 50%;">
+				<button type="button" style="width: 10%;" onclick="searchTravels(document.getElementById('search').value,1)">搜索景点</button>
+			</div>
+			<script>
+				function searchTravels(searchValue,page) {
+					// alert(searchValue)
+					$.ajax(
+							{
+								url :"<%=request.getContextPath()%>/searchByString",
+								type :"post",
+								data :{
+									"search":searchValue,
+									"pageNum":page
+								},
+								dataType:"json",
+								success : function (result) {
+									// alert("Ajax访问成功")
+									var list = result.travelList;
+									var travelId = result.id;
+									if ($("#div").length>0){
+										$(".col-md-3").remove();
+									}
+									//添加数据
+									for (var i = 0; i < list.length; i++) {
+										$("#div").append("" +
+												"<div class=\"col-md-3 col-sm-3 col-xs-6 w3gallery-grids\">\n" +
+												"\t\t\t\t<a href=\"<%=request.getContextPath()%>/travel-detail?id="+list[i].id+"\" class=\"imghvr-hinge-right figure\">\n" +
+												"\t\t\t\t\t<img src=\"<%=request.getContextPath()%>/images/g1.jpg\" alt=\"\" title=\"Trendy Travel Image\"/>\n" +
+												"\t\t\t\t\t<div class=\"agile-figcaption\">\n" +
+												"\t\t\t\t\t\t<h4>"+list[i].title+"</h4>\n" +
+												"\t\t\t\t\t\t<p>"+list[i].info+"</p>\n" +
+												"\t\t\t\t\t</div>\n" +
+												"\t\t\t\t</a>\n" +
+												"\t\t\t</div>" +
+												"");
+									}
+									//对于下标
+									if ($(".page-item").length>0) {
+										$(".page-item").remove();
+									}
+									var string = result.string+"";
+									$("#pagination").append('<li class="page-item"><a class="page-link" href="javascript:;" onclick="searchTravels(\''+document.getElementById('search').value+'\',1)">首页</a></li>');
+									$("#pagination").append('<li class="page-item"><a class="page-link" href="javascript:;" onclick="searchTravels(\''+document.getElementById('search').value+'\','+(result.pageNum-1)+')">上一页</a></li>');
+									for (var i = 1; i <=result.pages; i++) {
+										$("#pagination").append('<li class="page-item"><a class="page-link" href="javascript:;" onclick="searchTravels(\''+document.getElementById('search').value+'\','+i+')">'+i+'</a></li>');
+									}
+									$("#pagination").append('<li class="page-item"><a class="page-link" href="javascript:;" onclick="searchTravels(\''+document.getElementById('search').value+'\','+(result.pageNum+1)+')">下一页</a></li>');
+									$("#pagination").append('<li class="page-item"><a class="page-link" href="javascript:;" onclick="searchTravels(\''+document.getElementById('search').value+'\','+result.pages+')">尾页</a></li>');
+								}
+							}
+					)
+				}
+			</script>
+		</div>
 		<div>
 			<h4>分类列表</h4>
 			<ul id="pagination2" class="pagination">
 				<c:forEach items="${catalogs}" var="catalog">
-					<li class="page-item2"><a class="page-link" href="javascript:;" onclick="ajaxSearch(${catalog.id},1)">${catalog.title}|</a></li>
+					<li class="page-item2"><a class="page-link" href="javascript:;" onclick="ajaxSearch(${catalog.id},1)">${catalog.title}</a></li>
 				</c:forEach>
 				<script>
 					function ajaxSearch(id,page) {
@@ -339,17 +295,6 @@
 
 		</div>
 
-		<div><nav aria-label="Page navigation example">
-			<ul id="pagination" class="pagination">
-				<li class="page-item"><a class="page-link" href="javascript:;" onclick="ajax(1)">首页</a></li>
-				<li class="page-item"><a class="page-link" href="javascript:;" onclick="ajax(${pageInfo.pageNum-1})">上一页</a></li>
-				<c:forEach step="1" end="${pageInfo.pages}"  begin="1" varStatus="index">
-					<li class="page-item"><a class="page-link" href="javascript:;" onclick="ajax(${index.index})">${index.index}</a></li>
-				</c:forEach>
-				<li class="page-item"><a class="page-link" href="javascript:;" onclick="ajax(${pageInfo.pageNum+1})">下一页</a></li>
-				<li class="page-item"><a class="page-link" href="javascript:;" onclick="ajax(${pageInfo.pages})">尾页</a></li>
-			</ul>
-		</nav></div>
 	</div>
 <%--    商品列表--%>
 	<div id="agileinfo" class="agileinfo-gallery-row">
@@ -357,7 +302,7 @@
 			<c:forEach items="${pageInfo.list}" var="travel">
 				<div class="col-md-3 col-sm-3 col-xs-6 w3gallery-grids">
 					<a href="<%=request.getContextPath()%>/travel-detail?id=${travel.id}" class="imghvr-hinge-right figure">
-						<img src="<%=request.getContextPath()%>/images/g1.jpg" alt="" title="Trendy Travel Image"/>
+						<img src="<%=request.getContextPath()%>${travel.imgPath}" style="height: 210px;width: 100%" alt="" title="Trendy Travel Image"/>
 						<div class="agile-figcaption">
 							<h4>${travel.title}</h4>
 							<p>${travel.info}</p>
@@ -369,6 +314,19 @@
 
 		<div class="clearfix"> </div>
 	</div>
+</div>
+<div style="margin: 0 auto;width:30%">
+	<nav aria-label="Page navigation example">
+		<ul id="pagination" class="pagination">
+			<li class="page-item"><a class="page-link" href="javascript:;" onclick="ajax(1)">首页</a></li>
+			<li class="page-item"><a class="page-link" href="javascript:;" onclick="ajax(${pageInfo.pageNum-1})">上一页</a></li>
+			<c:forEach step="1" end="${pageInfo.pages}"  begin="1" varStatus="index">
+				<li class="page-item"><a class="page-link" href="javascript:;" onclick="ajax(${index.index})">${index.index}</a></li>
+			</c:forEach>
+			<li class="page-item"><a class="page-link" href="javascript:;" onclick="ajax(${pageInfo.pageNum+1})">下一页</a></li>
+			<li class="page-item"><a class="page-link" href="javascript:;" onclick="ajax(${pageInfo.pages})">尾页</a></li>
+		</ul>
+	</nav>
 </div>
 <!-- //Gallery -->
 <div class="tlinks">

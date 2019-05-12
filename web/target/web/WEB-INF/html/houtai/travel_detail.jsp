@@ -5,7 +5,7 @@
                     <div class="form-group">
                         <label for="exampleInputEmail1">图片</label>
 <%--                        <input type="hidden" name="imagePath" value="${book.bPath}" />--%>
-                        <img src="<%=request.getContextPath()%>${travel.imgPath}">
+                        <img style="width: 200px;height: 200px" src="<%=request.getContextPath()%>${travel.imgPath}">
 <%--                        <input type="file" class="form-control" name="imgPath" id="exampleInputEmail10" aria-describedby="emailHelp">--%>
                     </div>
                     <div class="form-group">

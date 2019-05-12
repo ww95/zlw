@@ -8,19 +8,19 @@
         </div>
         <div class="form-group">
             <label for="exampleInputPassword2">昵称</label>
-            <input type="text" name="nick_name" class="form-control" id="exampleInputPassword2">
+            <input type="text" name="nick_name" class="form-control" value="${session_user.nick_name}" id="exampleInputPassword2">
         </div>
         <div class="form-group">
             <label for="exampleInputPassword3">电话</label>
-            <input type="text" class="form-control" name="tellphone" id="exampleInputPassword3">
+            <input type="text" class="form-control" name="tellphone" value="${session_user.tellphone}" id="exampleInputPassword3">
         </div>
         <div class="form-group">
             <label for="exampleInputPassword4">地址</label>
-            <input type="text" class="form-control" name="address" id="exampleInputPassword4">
+            <input type="text" class="form-control" name="address" value="${session_user.address}" id="exampleInputPassword4">
         </div>
         <div class="form-group">
             <label for="exampleInputPassword5">身份证</label>
-            <input type="text" class="form-control" id="exampleInputPassword5" name="id_card">
+            <input type="text" class="form-control" id="exampleInputPassword5" name="id_card" value="${session_user.id_card}">
         </div><div class="form-group">
         <label for="exampleInputPassword6">性别</label>
         <input type="radio" name="sex" id="exampleInputPassword6" value="1">男

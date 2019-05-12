@@ -29,7 +29,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.jsp"><i class="fa fa-gear"></i> <strong>HYBRID</strong></a>
+            <a class="navbar-brand" href="<%=request.getContextPath()%>/user/index"><i class="fa fa-gear"></i> <strong>阳光旅行社</strong></a>
         </div>
 
         <ul class="nav navbar-top-links navbar-right">

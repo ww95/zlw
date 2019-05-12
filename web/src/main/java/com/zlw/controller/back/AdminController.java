@@ -86,19 +86,15 @@ public class AdminController {
 
 
     @RequestMapping("self-password-update")
-    private String selfPasswordUpdate (Map<String,Object> map, User user, HttpSession session, @RequestParam String rePassword){
-//        System.out.println(user.toString());
-        if (null==user.getPassword()||"".equals(user.getPassword().trim())){
-            map.put("msg","请输入正确的信息！！！");
-            return "forward:to-self-password-update";
+    private String selfPasswordUpdate (Map<String,Object> map, User user, HttpSession session, @RequestParam String oldPwd,@RequestParam String rePassword){
+        User user1 = (User) session.getAttribute("admin");
+        if (!user1.getPassword().equals(oldPwd)){
+            map.put("msg","原密码输入错误，请重新输入");
+            return "forward:to-uodate-pwd";
         }
-        if (null==rePassword||"".equals(rePassword.trim())){
-            map.put("msg","请输入正确的信息！！！");
-            return "forward:to-self-password-update";
-        }
-        if (!UserUtil.getInstance().equals(user.getPassword(),rePassword)){
-            map.put("msg","密码输入不一致！！！请重新输入");
-            return "forward:to-self-password-update";
+        if (!user.getPassword().equals(rePassword)){
+            map.put("msg","密码输入不一致，请重新输入");
+            return "forward:to-uodate-pwd";
         }
         userService.editByUserName(user);
         session.setAttribute("admin",userService.getUserByAdmin(user.getUsername()));

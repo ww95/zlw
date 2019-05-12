@@ -2,6 +2,8 @@ package com.zlw.bean;
 
 import lombok.Data;
 
+import java.util.Date;
+
 @Data
 public class Order {
     private Integer id;
@@ -10,6 +12,7 @@ public class Order {
     private Integer travelId;
     private Integer totalAdultNumber;
     private Integer totalChildrenNumber;
+    private Date date;
     private Double totalPrices;
     private Integer isPlay;
     private String comments;

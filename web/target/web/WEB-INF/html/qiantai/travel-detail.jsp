@@ -12,7 +12,7 @@
         <div class="form-group">
             <label for="exampleInputPassword1">图片</label>
             <input type="hidden" class="form-control" id="exampleInputPassword1">
-            <img src="<%=request.getContextPath()%>${travel.imgPath}">
+            <img style="height: 200px;width: 200px" src="<%=request.getContextPath()%>${travel.imgPath}">
         </div>
         <div class="form-group">
             <label for="exampleInputEmail2">旅游名</label>

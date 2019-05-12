@@ -18,7 +18,7 @@
         <div class="form-group">
             <label for="exampleInputPassword1">图片</label>
             <input type="hidden" class="form-control" id="exampleInputPassword1">
-            <img src="<%=request.getContextPath()%>${travel.imgPath}">
+            <img style="height: 200px;width: 200px" src="<%=request.getContextPath()%>${travel.imgPath}">
         </div>
         <div class="form-group">
             <label for="exampleInputEmail2">旅游名</label>
@@ -27,6 +27,10 @@
         <div class="form-group">
             <label for="exampleInputPassword4">目的地</label>
             <input type="text" class="form-control" id="exampleInputPassword4" value="${travel.destination}">
+        </div>
+        <div class="form-group">
+            <label for="date">出发日期</label>
+            <input type="date" class="form-control" name="date" id="date">
         </div>
         <div class="form-group">
             <label for="totalChildrenNumber">小孩数目</label>

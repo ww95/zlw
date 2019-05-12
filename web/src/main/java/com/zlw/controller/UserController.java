@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 
@@ -47,9 +48,11 @@ public class UserController {
     public String adminIndex(Map<String,Object> map, @RequestParam(required = false) Integer pageNum){
         Integer index = Utils.pageUtil(pageNum);
         PageHelper.startPage(index,8);
-        PageInfo pageInfo = PageInfo.of(travelService.getList());
+        List<Travel> list = travelService.getList();
+        PageInfo pageInfo = PageInfo.of(list);
         map.put("pageInfo",pageInfo);
         map.put("catalogs",catalogService.getAll());
+        map.put("hots",list.subList(0,4));
         return "qiantai/index";
     }
 
@@ -169,9 +172,19 @@ public class UserController {
      * @param user
      */
     @RequestMapping("self-password-update")
-    @ResponseBody
-    private void selfPasswordUpdate(Map<String,Object> map, User user){
+    private String selfPasswordUpdate(Map<String,Object> map, User user,@RequestParam String oldPwd,@RequestParam String rePassword,HttpSession session){
+        User user1 = (User) session.getAttribute("session_user");
+        if (!user1.getPassword().equals(oldPwd)){
+            map.put("msg","原密码输入错误，请重新输入");
+            return "forward:to-uodate-pwd";
+        }
+        if (!user.getPassword().equals(rePassword)){
+            map.put("msg","密码输入不一致，请重新输入");
+            return "forward:to-uodate-pwd";
+        }
+        map.put("msg","密码修改完成！！！！！");
         userService.editByUserName(user);
+        return "redirect:to-uodate-pwd";
     }
 
     @RequestMapping("collection-detail")
@@ -213,5 +226,10 @@ public class UserController {
         map.put("travel",travelService.getById(id));
         map.put("time",System.currentTimeMillis());
         return "qiantai/travel-buy";
+    }
+    @RequestMapping("logout")
+    public String logout(Map<String,Object> map,HttpSession session){
+        session.setAttribute("session_user",null);
+        return "redirect:/index";
     }
 }

@@ -40,9 +40,11 @@ public class DefaultController {
     public String index(Map<String,Object> map,@RequestParam(required = false) Integer pageNum){
         Integer index = Utils.pageUtil(pageNum);
         PageHelper.startPage(index,8);
-        PageInfo pageInfo = PageInfo.of(travelService.getList());
+        List<Travel> list = travelService.getList();
+        PageInfo pageInfo = PageInfo.of(list);
         map.put("pageInfo",pageInfo);
         map.put("catalogs",catalogService.getAll());
+        map.put("hots",list.subList(0,4));
         return "qiantai/index";
     }
 
