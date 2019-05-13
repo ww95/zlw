@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
@@ -208,6 +209,18 @@ public class UserController {
         User user = (User) session.getAttribute("session_user");
         order.setUserId(user.getU_id());
         System.out.println(order.toString());
+        System.out.println(order.getDate());
+        //添加出发时间
+        if (order.getDate()==null){
+            map.put("msg","请填好出发时间");
+            map.put("id",order.getTravelId());
+            return "forward:to-travel-buy?id="+order.getTravelId();
+        }
+        if (order.getDate().getTime()< new Date().getTime()){
+            map.put("msg","时间填写不对");
+            map.put("id",order.getTravelId());
+            return "forward:to-travel-buy?id="+order.getTravelId();
+        }
         orderService.addOne(order);
         if (null!=number&&number==1){
             return "redirect:collection-list";
@@ -223,6 +236,7 @@ public class UserController {
      */
     @RequestMapping("to-travel-buy")
     public String toTravelnBuy(Map<String,Object> map,@RequestParam(required = false)Integer id){
+        System.out.println(id);
         map.put("travel",travelService.getById(id));
         map.put("time",System.currentTimeMillis());
         return "qiantai/travel-buy";
@@ -232,4 +246,6 @@ public class UserController {
         session.setAttribute("session_user",null);
         return "redirect:/index";
     }
+
+
 }

@@ -1,14 +1,12 @@
 package com.test.web;
 
-import com.zlw.bean.Collections;
 import com.zlw.bean.Order;
-import com.zlw.dao.OrderDao;
-import com.zlw.service.CollectionService;
 import com.zlw.service.OrderService;
 import org.junit.Test;
 
 import javax.annotation.Resource;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class OrderTest extends BaseTest {
@@ -56,20 +54,13 @@ public class OrderTest extends BaseTest {
 
     @Test
     public void getOne(){
-        System.out.println(orderService.getById(1));
+        System.out.println(orderService.getById(2));
     }
     @Test
     public void update(){
         Order order = new Order();
-        order.setId(1);
-        order.setComments("嘻嘻13");
-        order.setIsPlay(0);
-        order.setOrderNumber("321611516dsadas1");
-        order.setTotalAdultNumber(132);
-        order.setTotalChildrenNumber(15);
-        order.setTotalPrices(99.0);
-        order.setTravelId(1);
-        order.setUserId(1);
+        order.setId(2);
+        order.setDate(new Date());
         orderService.edit(order);
     }
 

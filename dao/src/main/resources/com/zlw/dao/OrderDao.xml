@@ -13,6 +13,8 @@
        <result column="total_prices" property="totalPrices" javaType="Double"></result>
        <result column="is_play" property="isPlay" javaType="Integer"></result>
        <result column="comments" property="comments" javaType="String"></result>
+       <result column="sum_totail" property="sum_totail" javaType="Double"></result>
+       <result column="date" property="date" javaType="java.sql.Date"></result>
        <association property="user" column="user_id" select="com.zlw.dao.UserDao.selectById"></association>
        <association property="travel" column="travel_id" select="com.zlw.dao.TravelDao.selectById"></association>
    </resultMap>
@@ -25,16 +27,23 @@
         select * from order_table where o_id=#{id}
     </select>
 
+    <select id="selectGroup" resultMap="order">
+       select travel_id,sum(total_prices) sum_totail from order_table   group by travel_id;
+    </select>
+
+    <select id="selectSale" resultType="Integer">
+        select  sum(total_prices) from order_table
+    </select>
     <insert id="insertList" parameterType="java.util.List">
-        insert into order_table(order_number, user_id, travel_id, total_adult, total_children, total_prices, is_play) VALUES
+        insert into order_table(order_number, user_id, travel_id, total_adult, total_children, total_prices, is_play,date) VALUES
         <foreach collection="list" item="order" separator=",">
-            (#{order.orderNumber},#{order.userId},#{order.travelId},#{order.totalAdultNumber},#{order.totalChildrenNumber},#{order.totalPrices},#{order.isPlay})
+            (#{order.orderNumber},#{order.userId},#{order.travelId},#{order.totalAdultNumber},#{order.totalChildrenNumber},#{order.totalPrices},#{order.isPlay},#{order.date})
         </foreach>
     </insert>
 
     <insert id="insertOne" parameterType="com.zlw.bean.Order">
-        insert into order_table(order_number, user_id, travel_id, total_adult, total_children, total_prices, is_play) VALUES
-            (#{orderNumber},#{userId},#{travelId},#{totalAdultNumber},#{totalChildrenNumber},#{totalPrices},#{isPlay})
+        insert into order_table(order_number, user_id, travel_id, total_adult, total_children, total_prices, is_play,date) VALUES
+            (#{orderNumber},#{userId},#{travelId},#{totalAdultNumber},#{totalChildrenNumber},#{totalPrices},#{isPlay},#{date})
     </insert>
 
     <update id="update" parameterType="com.zlw.bean.Order">
@@ -47,6 +56,7 @@
             <if test="totalChildrenNumber!=null">total_children=#{totalChildrenNumber},</if>
             <if test="totalPrices!=null">total_prices=#{totalPrices},</if>
             <if test="isPlay!=null">is_play=#{isPlay},</if>
+            <if test="date!=null">date=#{date},</if>
             <if test="comments!=null">comments=#{comments},</if>
         </set>
         where o_id = #{id}

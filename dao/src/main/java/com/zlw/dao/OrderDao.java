@@ -13,4 +13,7 @@ public interface OrderDao {
     Order selectOne(Integer id);
     void update(Order order);
     void deleteById(Integer id);
+    Integer selectSale();
+
+    List<Order> selectGroup();
 }

@@ -33,8 +33,8 @@
   <p class="forgot"><a id="iforget" href="javascript:void(0);">Forgot your password?</a></p>
   <div class="rem_sub">
   <div class="rem_sub_l">
-  <input type="checkbox" name="checkbox" id="save_me">
-   <label for="checkbox">Remember me</label>
+<%--  <input type="checkbox" name="checkbox" id="save_me">--%>
+<%--   <label for="checkbox">Remember me</label>--%>
    </div>
     <label>
       <input type="submit" class="sub_button" name="button" id="button" value="SIGN-IN" style="opacity: 0.7;">
@@ -50,7 +50,9 @@
 
    <h1>Forgot password</h1>
    <br>
-   <div class="forget_model_h2">(Please enter your registered email below and the system will automatically reset users’ password and send it to user’s registered email address.)</div>
+   <div class="forget_model_h2">
+<%--       (Please enter your registered email below and the system will automatically reset users’ password and send it to user’s registered email address.)--%>
+   </div>
     <label>
     <input type="text" id="usrmail" class="txt_input txt_input2">
    </label>
@@ -79,6 +81,11 @@
  <br> <br>
 <%--<p align="center"> More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>--%>
 
-
+<script>
+    var msg="${msg}";
+    if(msg!=""){
+        alert(msg)
+    }
+</script>
 
 </body></html>

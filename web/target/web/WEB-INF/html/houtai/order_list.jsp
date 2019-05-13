@@ -8,10 +8,12 @@
                         <tr>
                             <th scope="col">订单号</th>
                             <th scope="col">旅游地</th>
+                            <th scope="col">出发时间</th>
                             <th scope="col">成人数</th>
                             <th scope="col">小孩数</th>
                             <th scope="col">总价格</th>
                             <th scope="col">是否支付</th>
+                            <th scope="col">操作</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -19,15 +21,19 @@
                             <tr>
                                 <td>${order.orderNumber}</td>
                                 <td>${order.travel.title}</td>
+                                <td>${order.date}</td>
                                 <td>${order.totalAdultNumber}</td>
                                 <td>${order.totalChildrenNumber}</td>
                                 <td>${order.totalPrices}</td>
                                 <c:if test="${order.isPlay==0}">
-                                    <td>支付失败，请重新<a href="<%=request.getContextPath()%>/backstage/admin/play-order?id=${order.id}">支付</a></td>
+                                    <td>支付失败，请重新支付</td>
                                 </c:if>
                                 <c:if test="${order.isPlay==1}">
                                     <td>支付成功</td>
                                 </c:if>
+                                <td>
+                                    <a href="<%=request.getContextPath()%>/backstage/admin/order-remove?id=${order.id}&pageNum=${pageInfo.pageNum}">删除</a>
+                                </td>
                             </tr>
                         </c:forEach>
                         </tbody>

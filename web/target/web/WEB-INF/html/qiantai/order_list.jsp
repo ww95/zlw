@@ -8,6 +8,7 @@
                         <tr>
                             <th scope="col">订单号</th>
                             <th scope="col">旅游地</th>
+                            <th scope="col">出发时间</th>
                             <th scope="col">成人数</th>
                             <th scope="col">小孩数</th>
                             <th scope="col">总价格</th>
@@ -19,6 +20,7 @@
                             <tr>
                                 <td>${order.orderNumber}</td>
                                 <td>${order.travel.title}</td>
+                                <td>${order.date}</td>
                                 <td>${order.totalAdultNumber}</td>
                                 <td>${order.totalChildrenNumber}</td>
                                 <td>${order.totalPrices}</td>

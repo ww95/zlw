@@ -11,6 +11,7 @@ import com.zlw.service.OrderService;
 import com.zlw.service.TravelService;
 import com.zlw.service.UserService;
 import com.zlw.util.UserUtil;
+import com.zlw.util.Utils;
 import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.FileItemFactory;
 import org.apache.commons.fileupload.FileUploadException;
@@ -107,6 +108,14 @@ public class AdminController {
         return "houtai/index";
     }
 
+    @RequestMapping("order-remove")
+    public String orderRemove(Map<String,Object> map,@RequestParam(required = false) Integer id,@RequestParam(required = false) Integer pageNum){
+        orderService.removeById(id);
+        System.out.println(pageNum);
+        System.out.println(Utils.pageUtil(pageNum));
+        return "redirect:order-list?pageNum="+Utils.pageUtil(pageNum);
+    }
+
     @RequestMapping("to-catalog-edit")
     private String toCatalogEdit(Map<String,Object> map,@RequestParam Integer id){
         map.put("catalog",catalogService.getOne(id));
@@ -185,7 +194,7 @@ public class AdminController {
         } catch (IOException e) {
             e.printStackTrace();
         }
-//        System.out.println(travel.toString());
+        System.out.println(travel.toString());
         travelService.addTravel(travel);
         return "redirect:travel-list";
     }
@@ -235,6 +244,21 @@ public class AdminController {
         travelService.remove(id);
         return "redirect:travel-list";
     }
+    @RequestMapping("data-list")
+    private String dataList(Map<String,Object> map, @RequestParam(required = false) Integer pageNum){
+        //根据商品id分组获取相应数量
+        List<Order> orderList = orderService.getAllByGroup();
+        System.out.println(orderList.toString());
+        PageHelper.startPage(Utils.pageUtil(pageNum),10);
+        List<Travel> list = travelService.getList();
+        System.out.println(list.toString());
+        PageInfo pageInfo = PageInfo.of(list);
+        map.put("pageInfo",pageInfo);
+        map.put("orderList",orderList);
+        Integer sale=orderService.selectSale();
+        map.put("sale",sale);
+        return "houtai/data_list";
+    }
 
     @RequestMapping("order-list")
     private String orderList(Map<String,Object> map,@RequestParam(required = false) Integer pageNum){
@@ -245,13 +269,6 @@ public class AdminController {
         PageInfo pageInfo = PageInfo.of(orderService.getAll());
         map.put("pageInfo",pageInfo);
         return "houtai/order_list";
-    }
-    @RequestMapping("play-order")
-    private String playOrder(Map<String,Object> map,@RequestParam(required = false) Integer id){
-        Order order = orderService.getById(id);
-        order.setIsPlay(1);
-        orderService.edit(order);
-        return "redirect:order-list";
     }
 
     private Travel travelBuilder(HttpServletRequest request) throws FileUploadException, IOException {

@@ -287,6 +287,14 @@
                         </li>
                     </ul>
                 </li>
+                <li>
+                    <a href="#"><i class="fa fa-sitemap"></i>统计功能<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="<%=request.getContextPath()%>/backstage/admin/data-list">数据统计</a>
+                        </li>
+                    </ul>
+                </li>
 
             </ul>
 

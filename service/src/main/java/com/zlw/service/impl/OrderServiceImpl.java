@@ -9,6 +9,8 @@ import com.zlw.service.OrderService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 @Service("orderService")
@@ -44,5 +46,15 @@ public class OrderServiceImpl implements OrderService {
     @Override
     public void removeById(Integer id) {
         orderDao.deleteById(id);
+    }
+
+    @Override
+    public List<Order> getAllByGroup() {
+        return orderDao.selectGroup();
+    }
+
+    @Override
+    public Integer selectSale() {
+        return orderDao.selectSale();
     }
 }

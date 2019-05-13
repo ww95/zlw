@@ -84,4 +84,9 @@
             document.getElementById("myForm").submit();
         }
     }
+
+    var msg="${msg}";
+    if(msg!=""){
+        alert(msg)
+    }
 </script>

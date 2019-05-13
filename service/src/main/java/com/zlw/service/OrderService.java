@@ -12,4 +12,6 @@ public interface OrderService {
     Order getById(Integer id);
     void edit(Order order);
     void removeById(Integer id);
+    List<Order> getAllByGroup();
+    Integer selectSale();
 }
